@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "testcafe chrome tests",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "plop",
+    "commit": "git-cz"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +38,8 @@
     ]
   },
   "devDependencies": {
+    "git-cz": "^4.7.6",
+    "plop": "^2.7.4",
     "testcafe": "^1.12.0"
   }
 }
