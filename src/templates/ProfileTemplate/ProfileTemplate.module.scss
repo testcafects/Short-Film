@@ -1,0 +1,21 @@
+.t-profile-template {
+  &__container {
+    height: calc(100vh - 4rem);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  &__left-column {
+    flex: 4;
+    background-color: #eceaf6;
+  }
+  &__right-column {
+    flex: 12;
+    background-color: #fff;
+  }
+  &__links {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #35327c;
+  }
+}
