@@ -8,6 +8,13 @@ import ReferalBanner from '../../atoms/referal-banner/referal-banner.js';
 
 
 const ListTemplate = () => {
+
+    const List = [
+        { name: 'Price', filters: [{ name: 'Free', totalItems: 20 }, { name: 'Paid', totalItems: 112 }] },
+        { name: 'Sub Title', filters: [{ name: 'English', totalItems: 20 }, { name: 'Korean', totalItems: 90 }, { name: 'Japanese', totalItems: 16 }] },
+        { name: 'Languages', filters: [{ name: 'English', totalItems: 20 }, { name: 'Korean', totalItems: 90 }, { name: 'Japanese', totalItems: 16 }] },
+    ]
+
     return (
         <div className={style['t-list']}>
             <Header />
@@ -15,8 +22,10 @@ const ListTemplate = () => {
                 <ListMenuBar />
                 <main className={style['t-list__content']}>
                     <aside>
-                        <FilterItem />
-                        <FilterItem />
+                        {
+                            List.map((el, index) => <FilterItem key={index} {...el} />)
+                        }
+
                     </aside>
                     <section>
                         {
@@ -24,6 +33,7 @@ const ListTemplate = () => {
                         }
                     </section>
                     <section >
+                        <ReferalBanner />
                         <ReferalBanner />
                     </section>
                 </main>
