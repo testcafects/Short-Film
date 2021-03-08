@@ -1,19 +1,14 @@
 import style from "./referal-banner.module.scss";
 
-
-
-
 const ReferalBanner = () => {
+    const customStyle = { backgroundImage: `url('https://picsum.photos/240')` }
     return (
-        <div className={style['a-referal-banner']}>
-            <img src="https://picsum.photos/240" alt="banner" />
-
-            <div className="a-referal-banner__banner-content">
-                <button>SUMMER2021</button>
+        <div className={style['a-referal-banner']} style={customStyle}>
+            <button>SUMMER2021</button>
+            <section className={style['a-referal-banner__banner-content']}>
                 <div className={style['a-referal-banner__banner-content--description']}>Summer Offer  up to 30%</div>
                 <div className={style['a-referal-banner__banner-content--terms']}>Terms and condition applied</div>
-            </div>
-
+            </section>
         </div>
     )
 }
