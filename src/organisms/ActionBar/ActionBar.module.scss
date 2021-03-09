@@ -1,0 +1,10 @@
+.o-action-bar{
+    display: flex;
+    height: 3.75rem;
+    background-color: grey;
+    color: white;
+    justify-content: space-around;
+    & .buttonOuter{
+            display: flex;
+    }
+}
