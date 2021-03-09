@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './list-template.module.scss';
-import Header from '../../molecules/header/header.js';
 import FilterItem from '../../molecules/filter-item/filter-item.js';
 import ListMenuBar from '../../molecules/list-menu-bar/list-menu-bar.js';
 import ListCard from '../../organisms/list-card/list-card.js';
@@ -17,7 +16,6 @@ const ListTemplate = () => {
 
     return (
         <div className={style['t-list']}>
-            <Header />
             <div className={style['t-list__container']}>
                 <ListMenuBar />
                 <main className={style['t-list__content']}>
