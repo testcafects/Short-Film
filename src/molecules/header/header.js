@@ -13,7 +13,7 @@ const Header = () => {
         <header className={style['m-header']}>
             <section>
                 <Logo />
-                <Button type="text">Explore</Button>
+                <Button type="text">Explore </Button>
             </section>
             <SearchBar />
             <section>
