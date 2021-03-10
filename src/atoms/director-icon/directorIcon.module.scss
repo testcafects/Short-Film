@@ -1,0 +1,16 @@
+.a-director-icon {
+    &__image{
+    display: inline-block;
+    height: 80%;
+    border-radius: 55%;
+    border: 2px solid rgb(180, 180, 180);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 2.5rem;
+    // background: url("https://picsum.photos/60");
+    }
+    &__name{
+        font-size: 1rem;
+        margin-left: -2rem;
+    }
+}

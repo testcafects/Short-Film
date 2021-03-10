@@ -1,0 +1,27 @@
+.a-referal-banner {
+    height: 15rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+    }
+    &____banner-content {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        button {
+            border: 1px solid dashed var(--primary);
+        }
+        &--description {
+            font-size: 1rem;
+        }
+        &--terms {
+            font-size: 0.5rem;
+        }
+    }
+}

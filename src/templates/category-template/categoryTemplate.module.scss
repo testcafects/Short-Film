@@ -1,0 +1,27 @@
+.t-category-list{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    // width: 1200px;
+    &__title{
+        font-size: 24px;
+    float: left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    }
+    &__cardlist{
+        width: 100%;
+    display: flex;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    }
+    &__card{
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+    }
+    &__suggestion-bar{
+        margin-top: 1rem;
+    }
+}
+
+

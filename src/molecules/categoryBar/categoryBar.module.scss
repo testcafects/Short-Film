@@ -1,0 +1,9 @@
+.m-category-bar{
+    width:auto;
+    height: 3rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    &__button{
+        flex:1;
+    }
+}

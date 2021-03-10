@@ -1,0 +1,28 @@
+.o-list-card {
+    width: 100%;
+    background: var(--medium-dark);
+    border-radius: 0.54rem;
+    overflow: hidden;
+    margin: 0.25rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    img {
+        height: 8rem;
+        width: 8rem;
+        object-fit: cover;
+        object-position: top;
+    }
+    &__content {
+        padding: 0.5rem;
+        h1 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .author {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+    }
+}

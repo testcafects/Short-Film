@@ -1,0 +1,9 @@
+.m-suggestion-bar{
+    width:auto;
+    height: 3rem;
+    display: flex;
+    &__button{
+        flex:1;
+        // float: left;
+    }
+}
