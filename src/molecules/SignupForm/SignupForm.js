@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './Loginform.module.scss';
+import style from './SignupForm.module.scss'
 import TextBox from "./../../atoms/TextBox/TextBox"
 import Button from "../../atoms/LoginButton/LoginButton"
 import DividerClass from "../../atoms/Divider/Divider"
 
-const Loginform = props => {
+const SignupForm = props => {
     return (
-        <div className={style['m-loginform']} data-test="">
+        <div className={style['m-signup-form']} data-test="">
             <div className="form-group">
                 <TextBox name={"username"} dataTestId={"username"} />
             </div>
@@ -29,4 +29,4 @@ const Loginform = props => {
     );
 };
 
-export default Loginform;
+export default SignupForm;
