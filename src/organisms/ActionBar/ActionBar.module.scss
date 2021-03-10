@@ -1,0 +1,9 @@
+.o-action-bar{
+    display: flex;
+    height: 3.75rem;
+    background-color: rgb(184, 179, 179);
+    justify-content: space-around;
+    & .buttonOuter{
+            display: flex;
+    }
+}
