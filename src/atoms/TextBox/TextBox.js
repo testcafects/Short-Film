@@ -7,7 +7,6 @@ const TextBox = props => {
     return (
         <div className={style['a-text-box']}>
             <Input placeholder={props.name} name={props.name} />
-            {/* <input type="text" data-text="" name="username" placeholder="User Name" /> */}
         </div>
     );
 };
