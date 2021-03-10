@@ -1,0 +1,10 @@
+.a-button {
+  &:hover {
+    background-color: #521822 !important;
+  }
+  &--danger_big {
+    border: none !important;
+    width: 100%;
+    background-color: #ff4d4f !important;
+  }
+}
