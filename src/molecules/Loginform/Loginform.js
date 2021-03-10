@@ -7,7 +7,6 @@ import DividerClass from "../../atoms/Divider/Divider"
 const Loginform = props => {
     return (
         <div className={style['m-loginform']} data-test="">
-
             <div className="form-group">
                 <TextBox name={"username"} dataTestId={"username"} />
             </div>
