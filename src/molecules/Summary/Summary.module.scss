@@ -1,0 +1,41 @@
+.m-summary {
+  border: 1px solid #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: left;
+  font-size: 1rem;
+
+  &__header-one {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__header-two {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    & p:last-child {
+      text-align: right;
+    }
+  }
+
+  &__divider {
+    background-color: #000000;
+  }
+
+  &__content-one {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-weight: bold;
+
+    p:last-child {
+      text-align: right;
+    }
+  }
+
+  &__tc {
+    &-link {
+      color: rgba(8, 176, 243, 0.904);
+    }
+  }
+}
