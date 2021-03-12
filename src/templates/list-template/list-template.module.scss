@@ -3,7 +3,7 @@
     overflow-y: auto;
     &__content {
         display: grid;
-        grid-template-columns: 19rem calc(100vw - 37rem) 18rem;
+        grid-template-columns: 19rem calc(100% - 37rem) 18rem;
         aside {
             background: var(--medium-dark);
             padding: 1rem 1.5rem;
