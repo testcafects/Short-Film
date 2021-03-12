@@ -1,0 +1,16 @@
+.t-payment-form {
+  display: flex;
+  padding: 0 1rem;
+  margin: 0 4rem;
+
+  &__left {
+    width: 70%;
+  }
+
+  &__right {
+    margin-left: 2rem;
+    display: table;
+    position: sticky;
+    top: 0.5rem;
+  }
+}
