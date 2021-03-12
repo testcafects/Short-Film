@@ -1,4 +1,6 @@
 .t-list {
+    height: var(--inner-scroll);
+    overflow-y: auto;
     &__content {
         display: grid;
         grid-template-columns: 19rem calc(100vw - 37rem) 18rem;

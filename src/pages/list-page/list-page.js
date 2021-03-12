@@ -1,7 +1,7 @@
 import style from "./list-page.module.scss";
 
 import React from 'react'
-import ListTemplate from "../../templates/list-template/list-template";
+import ListTemplate from "../../templates/list-template/list-template.js";
 
 const ListPage = () => {
     return (
