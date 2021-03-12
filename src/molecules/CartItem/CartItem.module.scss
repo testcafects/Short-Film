@@ -1,11 +1,11 @@
 .m-cart-item{
 display:flex;
-.saveforlater{
+&__saveforlater{
     align-items: flex-end;
     justify-content: flex-end;
     padding-left: 9.5rem;
 }
-.remove{
+&__remove{
     align-items: flex-end;
     justify-content: flex-end;
     padding-left: 9.5rem;
