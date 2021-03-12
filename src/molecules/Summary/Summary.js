@@ -23,9 +23,21 @@ const Summary = (props) => {
       </p>
       <p className={style["m-summary__tc"]}>
         By completting your purchase you agree to these{" "}
-        <span className={style["m-summary__tc-link"]}>Terms of service</span>
+        <span className={style["m-summary__tc-link"]}>
+          <a
+            href="https://www.udemy.com/terms/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Terms of service
+          </a>
+        </span>
       </p>
-      <Button value="Complete Payment" type="primary" />
+      <Button
+        value="Complete Payment"
+        type="primary"
+        buttonStyle="--danger_big"
+      />
     </div>
   );
 };
