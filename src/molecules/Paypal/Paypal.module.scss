@@ -1,0 +1,30 @@
+.m-paypal {
+  margin: 0 1rem;
+  padding: 1rem;
+  border: 1px solid #e8e9eb;
+  background-color: #f8f8f9;
+  margin-top: 2rem;
+
+  &__lock {
+    display: flex;
+    justify-content: flex-end;
+
+    &__secure-connect {
+      display: flex;
+
+      &__lock {
+        display: flex;
+        margin-right: 0.75rem;
+        align-items: center;
+        font-size: 2rem;
+        color: #8a92a3;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

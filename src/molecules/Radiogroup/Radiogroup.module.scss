@@ -1,0 +1,9 @@
+.m-radiogroup {
+  padding: 2rem 1.5rem 0;
+
+  &__group {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
