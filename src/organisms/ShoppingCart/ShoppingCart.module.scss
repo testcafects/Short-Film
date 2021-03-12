@@ -1,0 +1,20 @@
+.o-shopping-cart{
+padding-top: 1rem;
+background: var(--primary-contrast);
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: -38rem;
+}
+.cartItems{
+    width:50rem;
+    height:7rem;
+    margin: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2rem 3rem 0 var(--medium-dark);
+    border:0.1rem solid var(--primary-contrast);
+}
+.cartItems:hover{
+    box-shadow: 0 2rem 3rem 0 var(--primary-contrast);
+}
+}

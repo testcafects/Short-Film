@@ -39,9 +39,13 @@
 .card-list{
   display: inline-flex;
   overflow:auto;
+  
   /* float: left; */
 }
 /* .card-item{
   display: inline-flex;
   margin: 20px;
 } */
+.cartWithCheckout{
+  display:flex;
+}
