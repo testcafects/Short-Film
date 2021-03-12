@@ -1,0 +1,12 @@
+.m-account-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 17px;
+    width: 100%;
+  }
+}
