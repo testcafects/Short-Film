@@ -1,6 +1,6 @@
 .a-referal-banner {
     height: 15rem;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
     margin-bottom: 1rem;
     button {
         border: 2px dashed var(--primary);
-        border-radius: 0.5rem;
+        border-radius: var(--border-radius);
         background: rgba(0, 0, 0, 0.452);
         color: var(--primary-contrast);
         outline: none;

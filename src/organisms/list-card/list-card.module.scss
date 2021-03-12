@@ -1,7 +1,7 @@
 .o-list-card {
     width: 100%;
     background: var(--medium-dark);
-    border-radius: 0.54rem;
+    border-radius: var(--border-radius);
     overflow: hidden;
     margin-bottom: 0.5rem;
     display: flex;
@@ -16,18 +16,28 @@
     }
     &__content {
         padding: 0.5rem;
+        overflow: hidden;
         h1 {
             font-size: 1rem;
             font-weight: bold;
             margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         .description {
             font-size: 1rem;
             font-weight: 400;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         .author {
             font-size: 0.8rem;
             font-weight: 400;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
 }

@@ -6,7 +6,9 @@
     // height: 7.5rem;
     height: 4rem; // changed due to big nav bar size
     z-index: 9;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background: var(--primary-contrast);
     &::after {
         left: 0;
         bottom: -5px;

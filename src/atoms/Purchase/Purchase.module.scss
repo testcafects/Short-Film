@@ -1,0 +1,17 @@
+.a-purchase {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    &__price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    &__actions {
+        Button {
+            margin-left: 1rem;
+        }
+    }
+}

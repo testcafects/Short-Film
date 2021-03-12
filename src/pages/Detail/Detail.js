@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Detail.module.scss'
-import DetailTemplate from '../../templates/DetailTemplate/DetailTemplate';
+import DetailTemplate from '../../templates/DetailTemplate/DetailTemplate.js';
 
 const Detail = props => {
     return (

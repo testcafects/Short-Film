@@ -7,8 +7,9 @@ const ListCard = () => {
         <div className={style['o-list-card']}>
             <img src="https://picsum.photos/128" alt="card" />
             <div className={style['o-list-card__content']}>
-                <h1>The complete Node.js Developer Course</h1>
-                <div className={style['description']}>
+                <h1 title="The complete Node.js Developer Course">The complete Node.js Developer Course</h1>
+                <div title="e-commerce project with Asp Net Core,Angular 2,
+                    bootstrap 4,Paypal,Identity Core,C#," className={style['description']}>
                     e-commerce project with Asp Net Core,Angular 2,
                     bootstrap 4,Paypal,Identity Core,C#,
                                 </div>
