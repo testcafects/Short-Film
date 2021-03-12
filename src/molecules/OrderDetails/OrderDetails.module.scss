@@ -1,0 +1,25 @@
+.m-order-details {
+  padding: 1.5rem;
+  text-align: left;
+
+  &__header {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__name {
+      margin: 0 2rem;
+      line-height: normal;
+    }
+
+    &__price {
+      font-weight: 300;
+    }
+  }
+}
