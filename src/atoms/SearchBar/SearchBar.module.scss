@@ -1,0 +1,8 @@
+.a-search-bar {
+  &__autoComplete {
+    width: 20rem;
+    & > div {
+      border-radius: 2rem;
+    }
+  }
+}
