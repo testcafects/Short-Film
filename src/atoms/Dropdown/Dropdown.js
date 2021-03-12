@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Select } from "antd";
 
 import style from "./Dropdown.module.scss";
@@ -9,7 +9,6 @@ const Dropdown = (props) => {
   //   const [value, setValue] = useState("");
 
   const handleChange = (value) => {
-    console.log(`selected ${value}`);
     // setValue(value);
   };
 

@@ -1,3 +1,10 @@
-.a-image{
-
+.a-image {
+  &--user-pic {
+    display: inline-block;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    user-select: none;
+  }
 }

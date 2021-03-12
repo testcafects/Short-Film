@@ -5,7 +5,7 @@ import style from "./Image.module.scss";
 
 const Image = (props) => {
   return (
-    <div className={style["a-image"]}>
+    <div className={style[`a-image${props.navImage}`]}>
       <Avatar
         shape={props.shape}
         size={props.size}
