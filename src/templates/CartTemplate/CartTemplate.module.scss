@@ -1,0 +1,16 @@
+.t-cart-template{
+    width: 1200px;
+    margin: auto;
+    &__container{
+        display: grid;
+        grid-gap:0px;
+        grid-template-columns: repeat(16,75px);
+    }
+    &__cart{
+        grid-column-start: 1;
+    }
+    &__checkoutbox{
+        grid-column-start: 12;
+    }
+
+}
