@@ -1,0 +1,25 @@
+.m-checkout {
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+
+  &__header-one {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__header-two {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__dropdown {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      width: 40%;
+      border: 1px solid;
+    }
+  }
+}
