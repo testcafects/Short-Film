@@ -23,7 +23,7 @@ const SignupForm = props => {
                 <Button name={"Facebook"} dataTestId={"logIn"} classProp={"logIn"} />
             </div> */}
             <div className="form-group">
-                <Button name={"Log In"} dataTestId={"logIn"} classProp={"logIn"} />
+                <Button name={"Sign Up"} dataTestId={"signUp"} classProp={"signup"} />
             </div>
         </div>
     );

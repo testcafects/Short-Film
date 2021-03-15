@@ -1,27 +1,28 @@
 import { Selector } from "testcafe";
+// import LoginButton from '../src/atoms/TextBox/TextBox';
 
-fixture` Login to Short Films`
+fixture` Login Page Validation`
     .page`http:\\localhost:3000`
 
 test("My Login Page", async t => {
 
-    const userName = await Selector("input[data-text='username-input']");
-    const password = await Selector("input[data-text='password-input']");
+    const userName = Selector("input[name='username']");
+    const password = Selector("input[name='password']");
     const userNameVal = "hema";
     const passwordVal = "babu";
 
-    const loginButton = await Selector("button[data-text='loginButton']");
+    const loginButton = Selector("button[name='logIn']");
 
     await t
-        .except(userName.exists).ok()
-        .except(password.exists).ok()
-        .except(loginButton.exists).ok()
+        .expect(userName.exists).ok()
+        .expect(password.exists).ok()
+        .expect(loginButton.exists).ok()
 
     await t
         .typeText(userName, userNameVal)
         .typeText(password, passwordVal)
+        .expect(userName.value).eql(userNameVal)
+        .expect(password.value).eql(passwordVal)
         .click(loginButton)
-
-
 
 })
