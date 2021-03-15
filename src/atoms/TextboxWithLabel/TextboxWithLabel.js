@@ -10,6 +10,7 @@ const TextboxWithLabel = (props) => {
         placeholder={props.placeholder}
         name={props.labelName}
         defaultValue={props.defaultValue}
+        data-text={props.placeholder}
       />
     </div>
   );

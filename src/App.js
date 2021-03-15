@@ -1,5 +1,5 @@
 import "./App.css";
-import ProfilePage from "./pages/profile-page/profile-page.js";
+import ProfilePage from "./pages/ProfilePage/ProfilePage.js";
 
 function App() {
   return (
