@@ -6,12 +6,12 @@ import Cards from '../../molecules/Cards/Cards.js'
 const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 5,
       slidesToSlide: 2 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
       slidesToSlide: 2 // optional, default to 1.
     },
     mobile: {
@@ -42,15 +42,13 @@ return (
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-10-px"
 >
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-  <div> <Cards/></div>
-</Carousel>;
+  {
+    [1,2,3,4,5,6,7,8,9].map((det)=>{
+      return <Cards key={det}/>
+    }) 
+  }
+
+</Carousel>
 </div>
 );
 };
