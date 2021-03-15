@@ -25,6 +25,7 @@ const AccountForm = (props) => {
             visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
           }
         />
+        <PasswordTextbox placeholder="Confirm Password" />
       </Space>
 
       <div className={style["m-account-form__buttons"]}>

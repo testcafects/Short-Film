@@ -1,20 +1,50 @@
-import { Selector } from 'testcafe';
+import { Selector } from "testcafe";
+import accountModel from "./account-model.js";
 
-fixture`Getting started with Profile`.page`http://localhost:3000/profile`
+fixture`Getting started with Account`.page`http://localhost:3000/account`;
 
-test('ProfilePage', async t =>{
-    const firstNameValue = "Tanya";
-    const lastNameValue = "Yadav";
-    const firstName = Selector("[data-text='First Name']");
-    const lastName = Selector("[data-text='Last Name']");
-    const firstNameExist = firstName.exists;
-    const lastNameExist = lastName.exists;
-    await t
-        .expect(firstNameExist).ok()
-        .typeText(firstName, firstNameValue)
-        .expect(firstName.value).eql(firstNameValue)
+test("AccountPage", async (t) => {
+  const oldPassValue = accountModel.oldPwdValue;
+  const newPassValue = accountModel.newPwdValue;
+  const confirmPassValue = accountModel.confirmPwdValue;
 
-        .expect(lastNameExist).ok()
-        .typeText(lastName, lastNameValue)
-        .expect(lastName.value).eql(lastNameValue)
+  const oldPass = accountModel.oldPwd;
+  const newPass = accountModel.newPwd;
+  const confirmPass = accountModel.confirmPwd;
+
+  const oldPassExist = oldPass.exists;
+  const newPassExist = newPass.exists;
+  const confirmPassExist = confirmPass.exists;
+
+  const saveButton = accountModel.saveBtn;
+
+  await t
+    .expect(oldPassExist)
+    .ok()
+    .typeText(oldPass, oldPassValue)
+    .expect(oldPass.value)
+    .eql(oldPassValue)
+
+    .expect(newPassExist)
+    .ok()
+    .typeText(newPass, newPassValue)
+    .expect(newPass.value)
+    .eql(newPassValue)
+
+    .expect(confirmPassExist)
+    .ok()
+    .typeText(confirmPass, confirmPassValue)
+    .expect(confirmPass.value)
+    .eql(confirmPassValue)
+
+    .setNativeDialogHandler(() => true)
+    .click(saveButton);
+});
+
+test("Watched History Page", async (t) => {
+  const watchedLink = accountModel.watchedHistoryLink;
+  await t
+    .click(watchedLink)
+    .navigateTo("http://localhost:3000/watched-history")
+    .wait(3000);
 });
