@@ -4,7 +4,7 @@ import CartItem from '../../molecules/CartItem/CartItem'
 
 const ShoppingCart = props => {
 return (
-<div className={style['o-shopping-cart']}>
+<div className={style['o-shopping-cart']} data-test="shopping-cart">
    <div className={style['o-shopping-cart__title']}> ShoppingCart</div>
     <div >
                         {

@@ -16,7 +16,7 @@ cover={<img alt="example" src="https://source.unsplash.com/random/150x125" />}
 >
 <Meta title="The Complete Node.js Tutorial" description="Director : Nolan" data-test="meta_info"/>
 <Rating/>
-<Buttons id="btn" name="Add to Cart" width="112px" height="32px"/>
+<Buttons id="btn" name="Add to Cart" width="112px" height="32px" data/>
 </Card>
 </div>
 );
