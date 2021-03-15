@@ -30,7 +30,7 @@ const ProfileForm = (props) => {
       <TextboxWithLabel
         labelName="Genres"
         placeholder="Genres"
-        defaultValue="Action"
+        defaultValue=""
       />
       <TextboxWithLabel
         labelName="Social Media Link"
