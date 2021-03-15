@@ -8,13 +8,13 @@ const { Meta } = Card;
 
 const Cards = props => {
 return (
-<div className={style['m-cards']}>
+<div className={style['m-cards']} data-test="individual_card">
 <Card
 hoverable
 style={{ width: 175 }}
 cover={<img alt="example" src="https://source.unsplash.com/random/150x125" />}
 >
-<Meta title="The Complete Node.js Tutorial" description="Director : Nolan" />
+<Meta title="The Complete Node.js Tutorial" description="Director : Nolan" data-test="meta_info"/>
 <Rating/>
 <Buttons id="btn" name="Add to Cart" width="112px" height="32px"/>
 </Card>
