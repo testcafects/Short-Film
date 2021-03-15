@@ -1,20 +1,22 @@
 .o-shopping-cart{
 padding-top: 1rem;
 background: var(--primary-contrast);
-.title{
+&__title{
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
 }
-.cartItems{
-    width:50rem;
+&__cartItems{
+   // width:50rem;
+    width:42rem; 
     height:7rem;
     margin: 20px;
     margin-bottom: 2rem;
-    box-shadow: 0 2rem 3rem 0 var(--medium-dark);
-    border:0.1rem solid var(--primary-contrast);
+    box-shadow: 1rem 1rem 1rem 1rem var(--medium-dark);
+    border:1rem 1rem solid var(--primary-contrast);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
-.cartItems:hover{
-    box-shadow: 0 2rem 3rem 0 var(--primary-contrast);
+&__cartItems:hover{
+    box-shadow: 2rem 2rem 2rem 2rem var(--medium-dark);
 }
 }

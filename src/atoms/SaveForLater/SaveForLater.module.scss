@@ -1,11 +1,16 @@
 .a-save-for-later{
-    margin-right: -16rem;
-    .saveLater{
+   // margin-right: -16rem;
+   padding-right: 4rem;
+   display:flex;
+    &__text{
         font-size: 0.8rem;
-       padding-right: 2rem; 
+       padding-right: 0.2rem; 
+       padding-top: 0.5rem;
+       //padding-left: 1rem;
+     
     }
-    .saveLaterIcon{
-        color:blue;
+    &__Icon{
+        color:var(--primary-color);
         font-size: 1.5rem;
     }
 }

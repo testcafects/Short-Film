@@ -5,13 +5,13 @@ import CartItem from '../../molecules/CartItem/CartItem'
 const ShoppingCart = props => {
 return (
 <div className={style['o-shopping-cart']}>
-   <div className={style['title']}> ShoppingCart</div>
-    <section >
+   <div className={style['o-shopping-cart__title']}> ShoppingCart</div>
+    <div >
                         {
-                            [1, 2].map((el) =><div className={style['cartItems']}> 
+                            [1, 2].map((el) =><div className={style['o-shopping-cart__cartItems']}> 
                                 <CartItem  key={el} /></div>)
                         }
-                    </section>
+                    </div>
    
 </div>
 );

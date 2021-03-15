@@ -1,14 +1,16 @@
 .a-remove-icon{
-    .amount{
+   display:flex;
+    &__amount{
         font-size: 1.25rem;
         font-weight: bold;
-        padding-right: 2rem;
-        
+        padding-right: 1rem;
+      //  display:flex;
+        //grid-column-start: 12;
     }
-    .delete{
+    &__delete{
         color:var(--warning);
         background-color: var(--medium);
-        margin-right: -27rem;
+        //margin-right: -27rem;
         font-size: 1.5rem;
     }
 }

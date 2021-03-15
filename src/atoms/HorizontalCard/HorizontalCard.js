@@ -5,10 +5,10 @@ import style from './HorizontalCard.module.scss'
 const HorizontalCard = props => {
 return (
 <div className={style['a-horizontal-card']}>
-<img className={style['image']} src="https://picsum.photos/240" alt="banner" />
-<div className={style['title']}>
+<img className={style['a-horizontal-card__image']} src="https://picsum.photos/240" alt="banner" />
+<span className={style['a-horizontal-card__title']}>
 {props.title}
-</div>
+</span>
 </div>
 );
 };

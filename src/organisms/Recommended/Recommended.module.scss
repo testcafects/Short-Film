@@ -1,12 +1,12 @@
 .o-recommended{
     display: grid;
     grid-gap:0px;
-    .title{
+    &__title{
         font-size: 2rem;
         font-weight: bold;
         text-align: left;
     }
-    .card-list{
+    &__card-list{
         display: inline-flex;
         
         /* float: left; */
