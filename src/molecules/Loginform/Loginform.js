@@ -16,12 +16,12 @@ return (
             <div className="form-group">
                 <Dividersection name={"divider"} dataTestId={"divider"} />
             </div>
-            {/* <div className="form-group">
-                <Button name={"Continue with Google"} dataTestId={"logIn"} classProp={"logIn"} />
+            <div className="form-group">
+                <SubmitButton name={"Continue with Google"} dataTestId={"google"} classProp={"google"} />
             </div>
             <div className="form-group">
-                <Button name={"Facebook"} dataTestId={"logIn"} classProp={"logIn"} />
-            </div> */}
+                <SubmitButton name={"facebook"} dataTestId={"facebook"} classProp={"facebook"} />
+            </div>
             <div className="form-group">
                 <SubmitButton name={"logIn"} dataTestId={"logIn"} classProp={"logIn"} />
             </div>

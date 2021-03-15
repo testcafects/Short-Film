@@ -1,5 +1,17 @@
 .a-button{
     margin-bottom: 1rem;
+    .google{
+        width: 100%;
+        // padding: 7.5px 10px;
+        background-color: #7676e6ad;
+        color: #fff;
+        font-size: 16px;
+        border: solid 1px rgb(244, 244, 248);
+        border-radius: 0.5rem;
+    }
+    .facebook{
+        background-color: #282892f5;
+    }
     button{
 
         width: 100%;

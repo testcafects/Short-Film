@@ -1,13 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+// import Routes from "./Routes.js";
 import LoginPage from "./pages/LoginPage/LoginPage.js";
 import SignupPage from "./pages/SignupPage/SignupPage"
-import 'antd/dist/antd.css';
 
 function App() {
   return (
     <div className="App">
-      <LoginPage />      
+      {/* <LoginPage />      */}
+      <SignupPage />
+      {/* <Routes />  */}
     </div>
   );
 }

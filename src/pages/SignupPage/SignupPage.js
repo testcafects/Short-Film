@@ -5,7 +5,8 @@ import Signupform from "./../../molecules/Signupform/Signupform.js"
 const SignupPage = props => {
     return (
         <div className={style['p-signup-page']}>
-            SignupPage
+        <div className={style['signInLabel']}>Sign Up and Watch</div>
+            <Signupform />
         </div>
     );
 };

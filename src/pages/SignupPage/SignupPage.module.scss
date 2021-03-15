@@ -1,3 +1,13 @@
 .p-signup-page{
-
+    padding: 1.25rem;
+    border: solid 1px #ccc;
+    width: 400px;
+    margin: 50px auto 0 auto;
+    background-color: #bfbfbf;
+    .signInLabel {
+        font-size: 1rem;
+        color: black;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
 }

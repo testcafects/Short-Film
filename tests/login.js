@@ -1,41 +1,44 @@
 import { Selector } from "testcafe";
-// import LoginButton from '../src/atoms/TextBox/TextBox';
+// import Textbox from '../src/atoms/TextBox/TextBox';
+// import SubmitButton from "../src/atoms/Button/Button";
 
 fixture` Login Page Validation`
     .page`http:\\localhost:3000`
 
-test("My Login Page", async t => {
+// test("My Login Page", async t => {
 
-    const userName = Selector("input[name='username']");
-    const password = Selector("input[name='password']");
-    const userNameVal = "hema";
-    const passwordVal = "babu";
+//     const userName = Selector("input[name='username']");
+//     const password = Selector("input[name='password']");
+//     const userNameVal = "hema";
+//     const passwordVal = "babu";
 
-    const loginButton = Selector("button[name='logIn']");
+//     const loginButton = Selector("button[data-test='logIn']");
 
-    await t
-        .expect(userName.exists).ok()
-        .expect(password.exists).ok()
-        .expect(loginButton.exists).ok()
+//     await t
+//         .expect(userName.exists).ok()
+//         .expect(password.exists).ok()
+//         .expect(loginButton.exists).ok()
 
-    await t
-        .typeText(userName, userNameVal)
-        .typeText(password, passwordVal)
-        .expect(userName.value).eql(userNameVal)
-        .expect(password.value).eql(passwordVal)
-        .click(loginButton)
+//     await t
+//         .typeText(userName, userNameVal)
+//         .typeText(password, passwordVal)
+//         .expect(userName.value).eql(userNameVal)
+//         .expect(password.value).eql(passwordVal)
+//         .click(loginButton)
 
-})
+// })
 
+fixture` Login Page Validation`
+    .page`http:\\localhost:3000/`
 
 test("My Sign Up Page", async t => {
-    const firstName = Selector("input[name='firstname']");
-    const userName = Selector("input[name='username']");
-    const password = Selector("input[name='password']");
+    const firstName = Selector("input[data-test='firstname']");
+    const userName = Selector("input[data-test='username']");
+    const password = Selector("input[data-test='password']");
     const userNameVal = "hema";
     const passwordVal = "babu";
 
-    const signupButton = Selector("button[name='signup']");
+    const signupButton = Selector("button[data-test='signup']");
 
     await t
         .expect(firstName.exists).ok()
@@ -52,26 +55,20 @@ test("My Sign Up Page", async t => {
 
 })
 
-test("My Sign Up Page second method", async t => {
-    // const firstName = Selector("input[name='firstname']");
-    // const userName = Selector("input[name='username']");
-    // const password = Selector("input[name='password']");
-    const userNameVal = "hema";
-    const passwordVal = "babu";
+// test("My Sign Up Page second method", async t => {
+//     const userNameVal = "hema";
+//     const passwordVal = "babu";
 
-    // const signupButton = Selector("button[name='signup']");
 
-    await t
-        .expect(TextBox.inputBox.exists).ok()
-        // .expect(TextBox.nameInput.exists).ok()
-        // .expect(TextBox.nameInput.exists).ok()
-        .expect(LoginButton.submitButton.exists).ok()
+//     await t
+//         .expect(Textbox.inputBox.exists).ok()
+//         .expect(SubmitButton.submitButton.exists).ok()
 
-    await t
-        .typeText(TextBox.nameInput, userNameVal)
-        .typeText(TextBox.nameInput, passwordVal)
-        .expect(TextBox.nameInput.value).eql(userNameVal)
-        .expect(TextBox.nameInput.value).eql(passwordVal)
-        .click(LoginButton.submitButton)
+//     await t
+//         .typeText(Textbox.nameInput, userNameVal)
+//         .typeText(Textbox.nameInput, passwordVal)
+//         .expect(Textbox.nameInput.value).eql(userNameVal)
+//         .expect(Textbox.nameInput.value).eql(passwordVal)
+//         .click(SubmitButton.submitButton)
 
-})
+// })

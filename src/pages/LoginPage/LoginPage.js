@@ -5,7 +5,7 @@ import Loginform from "./../../molecules/Loginform/Loginform.js"
 const LoginPage = props => {
     return (
         <div className={style['p-login-page']}>
-            <div className="signInLabel">Login and Watch</div>
+            <div className={style['signInLabel']}>Login and Watch</div>
             <Loginform />
         </div>
     );
