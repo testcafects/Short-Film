@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import CartPage from './pages/CartPage/CartPage';
+import Header from './molecules/header/header';
+import HomePageMain from './pages/HomePageMain/HomePageMain';
 
 function App() {
   return (
     <div className="App">
-
-    
-     <CartPage/>
-      
+      <Header/>
+      <HomePageMain/>
     </div>
   );
 }

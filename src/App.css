@@ -1,12 +1,23 @@
 
-
+:root {
+    --primary-color: #3726a6;
+    --primary-contrast: #ffffff;
+    --secondary-color: #4a44f2;
+    --secondary-contrast: #ffffff;
+    --warning: #f20505;
+    --gold: #f2be22;
+    --yellow: #f2e635;
+    --dark: #000;
+    --medium-dark: #f7f7f7;
+}
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,9 +26,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -28,7 +39,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* .card-item{
   display: inline-flex;

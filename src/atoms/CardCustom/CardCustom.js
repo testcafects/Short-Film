@@ -1,30 +1,25 @@
 import React from 'react';
 import style from './CardCustom.module.scss';
-import { Card, Avatar } from 'antd';
+import { Card } from 'antd';
+import VideoDescription from '../VideoDescription/VideoDescription';
+import VideoContainer from '../VideoContainer/VideoContainer';
 //import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 
-const { Meta } = Card;
 
-const CardCustom =(props) => {
+const CardCustom = (props) => {
     return (
         <div className={style['a-card-custom']} data-test="">
-            <Card
-                style={{ width: 250 }}
-                cover={
-                    <img
-                        alt="example"
-                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                }
-
-            >
-                <Meta 
-                className="cardMeta"
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                    title="Card title"
-                    description="This is the description"
-                />
+            <Card bodyStyle={{padding: "0",margin:0}} bordered hoverable>
+                <div className={style["cardInner"]} >
+                    <div className={style["cardImage"]}>
+                        <VideoContainer />
+                    </div>
+                    <div className={style["cardDescription"]}>
+                        <VideoDescription {...props} />
+                    </div>
+                </div>
             </Card>
+
         </div>
     );
 };

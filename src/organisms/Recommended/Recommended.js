@@ -7,7 +7,7 @@ return (
 <div className={style['title']}>Recommended For You</div>
     <div className={style['card-list']}>    
     {
-    [1, 2, 3, 4,5].map((det) => <Cards key={det}/>)
+    [1, 2, 3, 4,5,6,7,8,9,10,11,12,13].map((det) => <Cards key={det}/>)
     }        
     </div>
 </div>

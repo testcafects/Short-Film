@@ -6,16 +6,15 @@ import CardCollection from '../../molecules/CardCollection/CardCollection';
 const { TabPane } = Tabs;
 
 
-const TabPanleCustom = props => {
-    const videosTypes = ['Trending', "New", 'Most Popular']
+const TabPanleCustom = ({videosTypes,progress = false}) => {
     return (
         <div className={style['m-tab-panle-custom']} data-test="">
             <Tabs type="card">
                 {
-                    videosTypes.map((videoType, index) => {
-                        return <TabPane tab={videoType} key={index}>
-                            <CardCollection />
-                        </TabPane>
+                   videosTypes.length && videosTypes.map((videoType, index) => {
+                        return (<TabPane tab={videoType} key={index}>
+                            <CardCollection type={videoType} progress={progress} />
+                        </TabPane>)
                     })
                 }
             </Tabs>

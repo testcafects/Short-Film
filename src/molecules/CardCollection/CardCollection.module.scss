@@ -1,8 +1,7 @@
 .m-card-collection{
- display: flex;
- flex-direction: row;
- min-width: 100vh;
- overflow-x: auto;
- white-space: nowrap;
+    //background-color: rgb(217, 228, 228);
+    &.carousel {
+        margin: 2rem 0 2rem;
+    }
 
 }
