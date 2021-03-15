@@ -8,7 +8,7 @@ const onSearch = value => console.log(value);
 
 const CouponSearch = props => {
 return (
-<div className={style['a-coupon-search']}>
+<div className={style['a-coupon-search']} data-test="coupon-search">
 
 <Search
 placeholder="Enter Coupon Code"
