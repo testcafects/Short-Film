@@ -1,50 +1,63 @@
 import accountModel from "./account-model.js";
-import profileModel from './page-model/profile-model.js'
+import profileModel from "./page-model/profile-model.js";
 
-fixture`Getting started with Profile`.page`http://localhost:3000/profile`
+fixture`Getting started with Profile`.page`http://localhost:3000/profile`;
 
-test('ProfilePage', async t =>{   
-    console.log(profileModel.FNInput);
-    const firstNameExist = profileModel.FNInput.exists;
-    const lastNameExist = profileModel.LNInput.exists;
-    const emailExist = profileModel.emailInput.exists;
-    const dobExist = profileModel.DOBInput.exists;
-    const generExist = profileModel.GenresInput.exists;
-    const fbExist = profileModel.FBInput.exists;
-    const twitterExist = profileModel.TwitterInput.exists;
-    const saveExist = profileModel.saveButton.exists;
+test("ProfilePage", async (t) => {
+  console.log(profileModel.FNInput);
+  const firstNameExist = profileModel.FNInput.exists;
+  const lastNameExist = profileModel.LNInput.exists;
+  const emailExist = profileModel.emailInput.exists;
+  const dobExist = profileModel.DOBInput.exists;
+  const generExist = profileModel.GenresInput.exists;
+  const fbExist = profileModel.FBInput.exists;
+  const twitterExist = profileModel.TwitterInput.exists;
+  const saveExist = profileModel.saveButton.exists;
 
-    await t
-        .expect(firstNameExist).ok()
-        // .typeText(firstName, profileModel.firstNameValue)
-        .expect(profileModel.FNInput.value).eql(profileModel.firstNameValue)
+  await t
+    .expect(firstNameExist)
+    .ok()
+    // .typeText(firstName, profileModel.firstNameValue)
+    .expect(profileModel.FNInput.value)
+    .eql(profileModel.firstNameValue)
 
-        .expect(lastNameExist).ok()
-        // .typeText(lastName, profileModel.lastNameValue)
-        .expect(profileModel.LNInput.value).eql(profileModel.lastNameValue)
+    .expect(lastNameExist)
+    .ok()
+    // .typeText(lastName, profileModel.lastNameValue)
+    .expect(profileModel.LNInput.value)
+    .eql(profileModel.lastNameValue)
 
-        .expect(emailExist).ok()
-        .expect(profileModel.emailInput.value).eql(profileModel.email)
+    .expect(emailExist)
+    .ok()
+    .expect(profileModel.emailInput.value)
+    .eql(profileModel.email)
 
-        .expect(dobExist).ok()
-        .typeText(profileModel.DOBInput, profileModel.DOB)
-        .expect(profileModel.DOBInput.value).eql(profileModel.DOB)
+    .expect(dobExist)
+    .ok()
+    .typeText(profileModel.DOBInput, profileModel.DOB)
+    .expect(profileModel.DOBInput.value)
+    .eql(profileModel.DOB)
 
-        .expect(generExist).ok()
-        .typeText(profileModel.GenresInput, profileModel.gener)
-        .expect(profileModel.GenresInput.value).eql(profileModel.gener)
+    .expect(generExist)
+    .ok()
+    .typeText(profileModel.GenresInput, profileModel.gener)
+    .expect(profileModel.GenresInput.value)
+    .eql(profileModel.gener)
 
-        .expect(fbExist).ok()
-        .typeText(profileModel.FBInput, profileModel.FB)
-        .expect(profileModel.FBInput.value).eql(profileModel.FB)
+    .expect(fbExist)
+    .ok()
+    .typeText(profileModel.FBInput, profileModel.FB)
+    .expect(profileModel.FBInput.value)
+    .eql(profileModel.FB)
 
-        .expect(twitterExist).ok()
-        .typeText(profileModel.TwitterInput, profileModel.twitter)
-        .expect(profileModel.TwitterInput.value).eql(profileModel.twitter)
-        // .setNativeDialogHandler(() => true)
-        // .click(profileModel.saveButton)
+    .expect(twitterExist)
+    .ok()
+    .typeText(profileModel.TwitterInput, profileModel.twitter)
+    .expect(profileModel.TwitterInput.value)
+    .eql(profileModel.twitter);
+  // .setNativeDialogHandler(() => true)
+  // .click(profileModel.saveButton)
 });
-
 
 // test("Account Details Page", async (t) => {
 //     const accountLink = profileModel.accontDetailsLink;
@@ -94,10 +107,10 @@ test("AccountPage", async (t) => {
     .click(saveButton);
 });
 
-// test("Watched History Page", async (t) => {
-//   const watchedLink = accountModel.watchedHistoryLink;
-//   await t
-//     .click(watchedLink)
-//     .navigateTo("http://localhost:3000/watched-history")
-//     .wait(3000);
-// });
+test("Watched History Page", async (t) => {
+  const watchedLink = accountModel.watchedHistoryLink;
+  await t
+    .click(watchedLink)
+    .navigateTo("http://localhost:3000/watched-history")
+    .wait(3000);
+});
