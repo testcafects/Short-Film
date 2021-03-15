@@ -8,6 +8,9 @@ const SignupForm = props => {
     return (
         <div className={style['m-signup-form']} data-test="">
             <div className="form-group">
+                <TextBox name={"firstname"} dataTestId={"firstname"} />
+            </div>
+            <div className="form-group">
                 <TextBox name={"username"} dataTestId={"username"} />
             </div>
             <div className="form-group">

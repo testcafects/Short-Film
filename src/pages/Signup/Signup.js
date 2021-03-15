@@ -4,7 +4,7 @@ import SignupForm from "../../molecules/SignupForm/SignupForm"
 
 const Signup = props => {
     return (
-        <div className={style['p-signup']} data-test="">
+        <div className={style['p-signup']} >
             <div className="signUpLabel">Sign Up and Watch</div>
             <SignupForm />
         </div>
