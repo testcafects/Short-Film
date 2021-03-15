@@ -1,0 +1,9 @@
+.m-card-meta-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__view,
+  &__time {
+    font-size: 0.8rem;
+  }
+}

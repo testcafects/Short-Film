@@ -6,6 +6,7 @@ import ProfileLinks from "../../atoms/ProfileLinks/ProfileLinks";
 import PersonalDetails from "../../templates/PersonalDetails/PersonalDetails.js";
 import AccountDetails from "../../templates/AccountDetails/AccountDetails.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import WatchHistory from "../WatchHistory/WatchHistory";
 
 const ProfileTemplate = (props) => {
   const routes = [
@@ -18,6 +19,11 @@ const ProfileTemplate = (props) => {
       path: "/account",
       component: AccountDetails,
       text: "Account Details",
+    },
+    {
+      path: "/watched-history",
+      component: WatchHistory,
+      text: "Watched History",
     },
   ];
   return (

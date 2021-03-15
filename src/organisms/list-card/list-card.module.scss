@@ -1,0 +1,44 @@
+// .container {
+//   width: 23rem;
+//   height: 8rem;
+//   border: 0.1rem solid black;
+
+// }
+.o-list-card {
+  width: 50%;
+  background: var(--medium-dark);
+  border-radius: 0.54rem;
+  overflow: hidden;
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__content {
+    padding: 0.5rem;
+    h1 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    .description {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .author {
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-left: auto;
+      margin-top: 0.5rem;
+      margin-left: -168px;
+    }
+    .rating {
+      margin-top: 0.5rem;
+    }
+  }
+}

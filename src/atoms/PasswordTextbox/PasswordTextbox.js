@@ -1,12 +1,13 @@
 import React from "react";
-import style from "./TextboxWithLabel.module.scss";
+import style from "./PasswordTextbox.module.scss";
 import { Input } from "antd";
 
-const TextboxWithLabel = (props) => {
+const PasswordTextbox = (props) => {
   return (
-    <div className={style["a-textbox-with-label"]}>
+    <div className={style["a-password-textbox"]}>
       <label>{props.labelName}</label>
-      <Input
+      <Input.Password
+        className={style["a-password-textbox__password"]}
         placeholder={props.placeholder}
         name={props.labelName}
         defaultValue={props.defaultValue}
@@ -15,4 +16,4 @@ const TextboxWithLabel = (props) => {
   );
 };
 
-export default TextboxWithLabel;
+export default PasswordTextbox;
