@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import HomePage from './Components/HomePage/HomePage';
+import Headers from './organisms/header/header.js'
+import FeedsPage from './Components/FeedsPage/FeedsPage';
+import CardCustom from './atoms/CardCustom/CardCustom';
+import CardGrid from './molecules/CardsGrid/CardGrid';
+import Cardlayout from './Components/Cardlayout/Cardlayout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Headers /> 
+      <HomePage/>
+
+      <FeedsPage> </FeedsPage>           
+    
+       {/* <Cardlayout />        */}
+        </div> 
   );
 }
 

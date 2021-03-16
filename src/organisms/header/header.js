@@ -1,7 +1,5 @@
 import React from 'react';
 import style from './header.module.scss';
-
-
 import { Button } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import ProfileIcon from '../../atoms/profile-icon/profile-icon';

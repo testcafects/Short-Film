@@ -1,60 +1,55 @@
-.colors-1-hex {
-    color: #3726a6;
-   }
-   .colors-2-hex {
-    color: #4a44f2;
-   }
-   .colors-3-hex {
-    color: #f2e635;
-   }
-   colors-4-hex {
-    color: #f2be22;
-   }
-   .colors-5-hex {
-    color: #f20505;
-   }
-    
-   /* Color Theme Swatches in RGBA */
-   .colors-1-rgba {
-    color: rgba(55, 38, 165, 1);
-   }
-   .colors-2-rgba {
-    color: rgba(73, 67, 242, 1);
-   }
-   .colors-3-rgba {
-    color: rgba(242, 229, 53, 1);
-   }
-   .colors-4-rgba {
-    color: rgba(242, 190, 33, 1);
-   }
-   .colors-5-rgba {
-    color: rgba(242, 4, 4, 1);
-   }
-    
-   /* Color Theme Swatches in HSLA */
-   .colors-1-hsla {
-    color: hsla(247, 62, 39, 1);
-   }
-   .colors-2-hsla {
-    color: hsla(241, 87, 60, 1);
-   }
-   .colors-3-hsla {
-    color: hsla(56, 88, 57, 1);
-   }
-   .colors-4-hsla {
-    color: hsla(45, 89, 54, 1);
-   }
-   .colors-5-hsla {
-    color: hsla(0, 96, 48, 1);
-   }
-    
-   // header should be in grid / Flex
-   #header {
-    height: 7.5rem;
-    #profile {
-    height: 5.5rem;
-    // top right bottom left
-    margin: 1rem 3rem 1rem auto;
-    }
-   }
+.button{
+    --c: grey;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.1em solid var(--c);
+    border-radius: 0.3em;
+    width: 8em;
+    height: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2.2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+    margin: 1em;
+}
+.button span{
+    position: absolute;
+    width: 50%;
+    height: 300%;
+    background-color: rgb(154, 248, 145);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 10%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+
+button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+button span:nth-child(1) {
+    --n: 1;
+}
+
+button span:nth-child(2) {
+    --n: 2;
+}
+
+button span:nth-child(3) {
+    --n: 3;
+}
+
+button span:nth-child(4) {
+    --n: 4;
+}
+
     

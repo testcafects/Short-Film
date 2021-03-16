@@ -1,5 +1,4 @@
 import React from 'react'
-import HeaderBar from '../../organisms/ActionBar/ActionBar'
 import ActionBar from '../../organisms/ActionBar/ActionBar'
 
 const HomePage = () => {
