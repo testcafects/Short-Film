@@ -1,0 +1,20 @@
+.a-genres{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:5px 0px;
+    label {
+        font-weight: bold;
+        padding-bottom:5px;
+    }
+    &__text{
+        width: 100%;
+        align-items: flex-start;
+    }
+}
+
+
+// .demo-option-label-item > span {
+//     margin-right: 6px;
+// }

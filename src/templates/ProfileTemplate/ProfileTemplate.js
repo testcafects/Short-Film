@@ -1,12 +1,12 @@
 import React from "react";
-import style from "./ProfileTemplate.module.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ProfileLinks from "../../atoms/ProfileLinks/ProfileLinks";
 import Header from "../../molecules/header/header.js";
 import ProfileColumn from "../../molecules/ProfileColumn/ProfileColumn";
-import ProfileLinks from "../../atoms/ProfileLinks/ProfileLinks";
-import PersonalDetails from "../../templates/PersonalDetails/PersonalDetails.js";
 import AccountDetails from "../../templates/AccountDetails/AccountDetails.js";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PersonalDetails from "../../templates/PersonalDetails/PersonalDetails.js";
 import WatchHistory from "../WatchHistory/WatchHistory";
+import style from "./ProfileTemplate.module.scss";
 
 const ProfileTemplate = (props) => {
   const routes = [

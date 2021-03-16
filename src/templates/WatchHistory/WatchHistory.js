@@ -1,7 +1,7 @@
-import React from "react";
-import style from "./WatchHistory.module.scss";
-import ListCard from "../../organisms/list-card/list-card.js";
 import { Pagination } from "antd";
+import React from "react";
+import ListCard from "../../organisms/list-card/list-card.js";
+import style from "./WatchHistory.module.scss";
 
 const WatchHistory = (props) => {
   return (

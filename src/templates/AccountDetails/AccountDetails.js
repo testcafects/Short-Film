@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./AccountDetails.module.scss";
 import AccountForm from "../../molecules/AccountForm/AccountForm.js";
+import style from "./AccountDetails.module.scss";
 
 const AccountDetails = (props) => {
   return (

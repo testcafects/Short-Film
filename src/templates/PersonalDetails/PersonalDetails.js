@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./PersonalDetails.module.scss";
 import ProfileForm from "../../molecules/ProfileForm/ProfileForm.js";
+import style from "./PersonalDetails.module.scss";
 
 const PersonalDetails = (props) => {
   return (

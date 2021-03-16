@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./ProfileColumn.module.scss";
 import ProfileAvatar from "../../atoms/ProfileAvatar/ProfileAvatar.js";
 import ProfileName from "../../atoms/ProfileName/ProfileName.js";
+import style from "./ProfileColumn.module.scss";
 
 const ProfileColumn = (props) => {
   return (

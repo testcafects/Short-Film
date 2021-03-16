@@ -1,10 +1,10 @@
-import React from "react";
-import style from "./AccountForm.module.scss";
-import PasswordTextbox from "../../atoms/PasswordTextbox/PasswordTextbox.js";
-import TextboxWithLabel from "../../atoms/TextboxWithLabel/TextboxWithLabel.js";
-import ProfileButton from "../../atoms/ProfileButton/ProfileButton.js";
-import { Space } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
+import { Space } from "antd";
+import React from "react";
+import PasswordTextbox from "../../atoms/PasswordTextbox/PasswordTextbox.js";
+import ProfileButton from "../../atoms/ProfileButton/ProfileButton.js";
+import TextboxWithLabel from "../../atoms/TextboxWithLabel/TextboxWithLabel.js";
+import style from "./AccountForm.module.scss";
 
 const AccountForm = (props) => {
   return (

@@ -1,27 +1,27 @@
-import React from 'react';
-import style from './header.module.scss';
-
-
-import { Button } from 'antd';
-import { ShoppingCartOutlined } from '@ant-design/icons';
-import ProfileIcon from '../../atoms/profile-icon/profile-icon';
-import SearchBar from '../../atoms/search-bar/search-bar.js';
-import Logo from '../../atoms/Logo/Logo';
+import { ShoppingCartOutlined } from "@ant-design/icons";
+import { Button } from "antd";
+import React from "react";
+import Logo from "../../atoms/Logo/Logo";
+import ProfileIcon from "../../atoms/profile-icon/profile-icon";
+import SearchBar from "../../atoms/search-bar/search-bar.js";
+import style from "./header.module.scss";
 
 const Header = () => {
-    return (
-        <header className={style['m-header']}>
-            <section>
-                <Logo />
-                <Button type="text">Explore</Button>
-            </section>
-            <SearchBar />
-            <section>
-                <Button type="text" icon={<ShoppingCartOutlined />}>Cart</Button>
-                <ProfileIcon />
-            </section>
-        </header>
-    )
-}
+  return (
+    <header className={style["m-header"]}>
+      <section>
+        <Logo />
+        <Button type="text">Explore</Button>
+      </section>
+      <SearchBar />
+      <section>
+        <Button type="text" icon={<ShoppingCartOutlined />}>
+          Cart
+        </Button>
+        <ProfileIcon />
+      </section>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

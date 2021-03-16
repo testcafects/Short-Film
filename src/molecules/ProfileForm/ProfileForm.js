@@ -1,7 +1,9 @@
 import React from "react";
-import style from "./ProfileForm.module.scss";
-import TextboxWithLabel from "../../atoms/TextboxWithLabel/TextboxWithLabel.js";
+import DatePickers from "../../atoms/DatePicker/DatePickers.js";
+import Genres from "../../atoms/Genres/Genres.js";
 import ProfileButton from "../../atoms/ProfileButton/ProfileButton.js";
+import TextboxWithLabel from "../../atoms/TextboxWithLabel/TextboxWithLabel.js";
+import style from "./ProfileForm.module.scss";
 
 const ProfileForm = (props) => {
   return (
@@ -22,16 +24,9 @@ const ProfileForm = (props) => {
           placeholder="Email"
           defaultValue="tanya@gmail.com"
         />
-        <TextboxWithLabel
-          labelName="Date of Birth"
-          placeholder="Date of Birth"
-        />
+        <DatePickers labelName="Date of Birth" placeholder="Date of Birth" />
       </div>
-      <TextboxWithLabel
-        labelName="Genres"
-        placeholder="Genres"
-        defaultValue=""
-      />
+      <Genres labelName="Genres" placeholder="Genres" />
       <TextboxWithLabel
         labelName="Social Media Link"
         placeholder="Facebook Link"

@@ -1,6 +1,6 @@
+import { Input } from "antd";
 import React from "react";
 import style from "./TextboxWithLabel.module.scss";
-import { Input } from "antd";
 
 const TextboxWithLabel = (props) => {
   return (

@@ -1,5 +1,5 @@
-import style from './rating.module.scss';
 import ReactStars from "react-rating-stars-component";
+import style from './rating.module.scss';
 
 
 const Rating = () => {

@@ -1,6 +1,6 @@
+import { Input } from "antd";
 import React from "react";
 import style from "./PasswordTextbox.module.scss";
-import { Input } from "antd";
 
 const PasswordTextbox = (props) => {
   return (
