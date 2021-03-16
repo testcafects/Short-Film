@@ -1,14 +1,13 @@
+import React from "react";
+import ListTemplate from "../../templates/list-template/list-template.js";
 import style from "./list-page.module.scss";
 
-import React from 'react'
-import ListTemplate from "../../templates/list-template/list-template.js";
-
 const ListPage = () => {
-    return (
-        <div className={style['p-list']}>
-            <ListTemplate />
-        </div>
-    )
-}
+  return (
+    <div className={style["p-list"]}>
+      <ListTemplate />
+    </div>
+  );
+};
 
-export default ListPage
+export default ListPage;

@@ -1,7 +1,7 @@
+import { Button, Input } from "antd";
 import React from "react";
-import style from "./PostComment.module.scss";
 import ProfileIcon from "../profile-icon/profile-icon";
-import { Input, Button } from "antd";
+import style from "./PostComment.module.scss";
 
 const PostComment = (props) => {
   return (

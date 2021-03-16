@@ -1,13 +1,10 @@
 import React from "react";
-import style from "./DetailTemplate.module.scss";
-
-import VideoPlayer from "../../atoms/VideoPlayer/VideoPlayer.js";
 import Purchase from "../../atoms/Purchase/Purchase.js";
-
+import VideoPlayer from "../../atoms/VideoPlayer/VideoPlayer.js";
 import VideoDescription from "../../molecules/VideoDescription/VideoDescription.js";
-import ListCard from "../../organisms/list-card/list-card.js";
-
 import CommentConatiner from "../../organisms/CommentConatiner/CommentConatiner.js";
+import ListCard from "../../organisms/list-card/list-card.js";
+import style from "./DetailTemplate.module.scss";
 
 const DetailTemplate = (props) => {
   const detail = {

@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./list-template.module.scss";
+import { useHistory } from "react-router-dom";
+import ReferalBanner from "../../atoms/referal-banner/referal-banner.js";
 import FilterItem from "../../molecules/filter-item/filter-item.js";
 import ListMenuBar from "../../molecules/list-menu-bar/list-menu-bar.js";
 import ListCard from "../../organisms/list-card/list-card.js";
-import ReferalBanner from "../../atoms/referal-banner/referal-banner.js";
-import { useHistory } from "react-router-dom";
+import style from "./list-template.module.scss";
 
 const ListTemplate = () => {
   const history = useHistory();

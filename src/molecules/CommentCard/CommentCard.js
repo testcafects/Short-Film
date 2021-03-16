@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./CommentCard.module.scss";
-import ProfileIcon from "../../atoms/profile-icon/profile-icon.js";
 import Comment from "../../atoms/Comment/Comment.js";
+import ProfileIcon from "../../atoms/profile-icon/profile-icon.js";
+import style from "./CommentCard.module.scss";
 
 const CommentCard = (props) => {
   return (

@@ -1,8 +1,8 @@
-import React from "react";
-import style from "./VideoDescription.module.scss";
-import CardMetaData from "../../molecules/card-meta-data/card-meta-data";
 import { ShareAltOutlined } from "@ant-design/icons";
 import { Button } from "antd";
+import React from "react";
+import CardMetaData from "../../molecules/card-meta-data/card-meta-data";
+import style from "./VideoDescription.module.scss";
 
 const VideoDescription = (props) => {
   const metaData = {

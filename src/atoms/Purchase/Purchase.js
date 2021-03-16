@@ -1,6 +1,6 @@
+import { Button } from "antd";
 import React from "react";
 import style from "./Purchase.module.scss";
-import { Button } from "antd";
 
 const Purchase = (props) => {
   return (

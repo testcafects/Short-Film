@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./CommentConatiner.module.scss";
 import PostComment from "../../atoms/PostComment/PostComment.js";
 import CommentCard from "../../molecules/CommentCard/CommentCard.js";
+import style from "./CommentConatiner.module.scss";
 
 const CommentConatiner = (props) => {
   return (

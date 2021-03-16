@@ -1,6 +1,6 @@
-import style from "./list-card.module.scss";
 import Rating from "../../atoms/rating/rating.js";
 import CardMetaData from "../../molecules/card-meta-data/card-meta-data.js";
+import style from "./list-card.module.scss";
 
 const ListCard = (props) => {
   const metaData = {
