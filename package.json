@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "testcafe chrome tests",
+    "test": "testcafe chrome tests/mainPageTest.js",
     "eject": "react-scripts eject",
     "generate": "plop",
     "commit": "git-cz"
