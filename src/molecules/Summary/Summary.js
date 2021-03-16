@@ -1,6 +1,5 @@
-import React from "react";
 import { Divider } from "antd";
-
+import React from "react";
 import Button from "../../atoms/Button/Button";
 import style from "./Summary.module.scss";
 
@@ -37,6 +36,7 @@ const Summary = (props) => {
         value="Complete Payment"
         type="primary"
         buttonStyle="--danger_big"
+        dataTest={"completePayment"}
       />
     </div>
   );

@@ -1,6 +1,5 @@
-import React from "react";
 import { LockFilled } from "@ant-design/icons";
-
+import React from "react";
 import style from "./Paypal.module.scss";
 
 const Paypal = (props) => {

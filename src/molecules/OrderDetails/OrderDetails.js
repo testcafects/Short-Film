@@ -1,7 +1,6 @@
 import React from "react";
-import style from "./OrderDetails.module.scss";
-
 import Image from "../../atoms/Image/Image";
+import style from "./OrderDetails.module.scss";
 
 const OrderDetails = (props) => {
   return (

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import { Radio } from "antd";
-
+import React, { useState } from "react";
 import Radiobutton from "../../atoms/RadioButton/RadioButton";
 import style from "./Radiogroup.module.scss";
 

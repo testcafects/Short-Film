@@ -1,5 +1,4 @@
 import Payment from "../src/pages/Payment/Payment";
-import "./App.css";
 
 function App() {
   return (

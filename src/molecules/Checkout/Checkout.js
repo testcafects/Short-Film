@@ -1,5 +1,4 @@
 import React from "react";
-
 import Dropdown from "../../atoms/Dropdown/Dropdown";
 import style from "./Checkout.module.scss";
 

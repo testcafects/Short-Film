@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import { Checkbox } from "antd";
-
+import React, { useState } from "react";
 import style from "./Checkbox.module.scss";
 
 const CheckboxAtom = (props) => {
@@ -12,7 +11,7 @@ const CheckboxAtom = (props) => {
   };
 
   return (
-    <div className={style["a-checkbox"]}>
+    <div className={style["a-checkbox"]} data-test={props.dataTest}>
       <Checkbox checked={checked} disabled={props.disabled} onChange={onChange}>
         {props.label}
       </Checkbox>

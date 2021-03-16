@@ -1,10 +1,8 @@
-import React from "react";
 import { LockFilled, QuestionCircleFilled } from "@ant-design/icons";
-
-import Input from "../../atoms/Textbox/Textbox";
-import Dropdown from "../../atoms/Dropdown/Dropdown";
+import React from "react";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
-
+import Dropdown from "../../atoms/Dropdown/Dropdown";
+import Input from "../../atoms/Textbox/Textbox";
 import style from "./CardDetails.module.scss";
 
 const CardDetails = (props) => {
@@ -38,25 +36,44 @@ const CardDetails = (props) => {
   return (
     <div className={style["m-card-details"]}>
       <div className={style["m-card-details__line1"]}>
-        <Input placeholder="Name on Card" />
+        <Input placeholder="Name on Card" dataTest={"card-name"} />
       </div>
       <div className={style["m-card-details__line2"]}>
-        <Input placeholder="card Number" suffix={<LockFilled />} />
+        <Input
+          placeholder="card Number"
+          suffix={<LockFilled />}
+          dataTest={"card-number"}
+        />
       </div>
       <div className={style["m-card-details__line3"]}>
         <span className={style["m-card-details__line3__expiry"]}>
-          <Dropdown defaultValue="MM" disable={false} options={monthOptions} />
-          <Dropdown defaultValue="YYYY" disable={false} options={yearOptions} />
+          <Dropdown
+            defaultValue="MM"
+            disable={false}
+            options={monthOptions}
+            dataTest={"card-expiry-month"}
+          />
+          <Dropdown
+            defaultValue="YYYY"
+            disable={false}
+            options={yearOptions}
+            dataTest={"card-expiry-year"}
+          />
         </span>
         <div className={style["m-card-details__line3__security"]}>
           <Input
             placeholder="Security Code"
             suffix={<QuestionCircleFilled />}
+            dataTest={"card-security-code"}
           />
         </div>
       </div>
       <div className={style["m-card-details__line4"]}>
-        <Checkbox checked={true} label={"Remember this Card"} />
+        <Checkbox
+          checked={true}
+          label={"Remember this Card"}
+          dataTest={"remember-me"}
+        />
       </div>
       <div className={style["m-card-details__line5"]}>
         <div className={style["m-card-details__line5__secure-connect"]}>

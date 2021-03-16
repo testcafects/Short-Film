@@ -1,6 +1,5 @@
-import React from "react";
 import { Avatar } from "antd";
-
+import React from "react";
 import style from "./Image.module.scss";
 
 const Image = (props) => {

@@ -1,5 +1,4 @@
 import React from "react";
-
 import Checkout from "../../molecules/Checkout/Checkout";
 import OrderDetails from "../../molecules/OrderDetails/OrderDetails";
 import Summary from "../../molecules/Summary/Summary";

@@ -1,7 +1,6 @@
+import { Radio } from "antd";
 import React from "react";
 import style from "./RadioButton.module.scss";
-
-import { Radio } from "antd";
 
 const RadioButton = (props) => {
   return (

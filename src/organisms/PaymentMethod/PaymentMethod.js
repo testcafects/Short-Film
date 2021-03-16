@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import style from "./PaymentMethod.module.scss";
-
-import Radiogroup from "../../molecules/Radiogroup/Radiogroup";
 import CardDetails from "../../molecules/CardDetails/CardDetails";
 import Paypal from "../../molecules/Paypal/Paypal";
+import Radiogroup from "../../molecules/Radiogroup/Radiogroup";
+import style from "./PaymentMethod.module.scss";
 
 const PaymentMethod = (props) => {
   const [radioVal, setRadioVal] = useState(1);
