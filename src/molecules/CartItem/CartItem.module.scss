@@ -3,15 +3,11 @@
     display:flex;
 }
 &__saveforlater{
-   // align-items: flex-end;
-  //  justify-content: flex-end;
     padding-right: 44rem;
-   // text-align: flex-end;
     padding-top: 1rem;
     flex-direction: row;
 }
 &__remove{
-  //  align-items: flex-end;
     justify-content: flex-end;
     padding-left: 20rem;
     text-align: flex-end;

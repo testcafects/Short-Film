@@ -1,13 +1,11 @@
-import React from 'react';
-import './App.css';
-import CartPage from './pages/CartPage/CartPage';
+import React from "react";
+import "./App.css";
+import CartPage from "./pages/CartPage/CartPage";
 
 function App() {
   return (
     <div className="App">
-    
-     <CartPage/>
-      
+      <CartPage />
     </div>
   );
 }
