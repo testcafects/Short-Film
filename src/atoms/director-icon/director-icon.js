@@ -1,5 +1,5 @@
 import { Avatar } from 'antd';
-import style from './directorIcon.module.scss'
+import style from './director-icon.module.scss'
 const DirectorIcon = (props) => {
     return (
         <div className={style['a-director-icon']}>

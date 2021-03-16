@@ -1,19 +1,23 @@
 .t-category-list{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    // width: 1200px;
+    display:grid;
+    padding: 0 1.25rem;
     &__title{
-        font-size: 24px;
-    float: left;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem 1rem;
+    }
+    &__left-arrow{
+        margin-top: 3.5rem;
+        size: 1rem;
+    }
+    &__most-trending-carousel{
+        width: 75rem;
+        margin-left: 1rem;
     }
     &__cardlist{
-        width: 100%;
+        // width: 100%;
     display: flex;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    padding: 0.5rem 0.5rem;
     }
     &__card{
         margin-right: 1rem;

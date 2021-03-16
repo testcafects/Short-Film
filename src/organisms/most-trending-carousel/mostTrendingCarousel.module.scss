@@ -1,0 +1,13 @@
+.t-carousel-list{
+    &__cardlist{
+        // width: 100%;
+    display: flex;
+    padding: 0 0.5rem 0 0.5rem;
+    }
+    &__card{
+        flex: 1;
+        padding: 0 2rem 0 0.5rem;
+    }
+}
+
+

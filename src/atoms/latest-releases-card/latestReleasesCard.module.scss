@@ -2,11 +2,13 @@
     width: 14rem;
     height: 14rem;
     border-radius: 0.5rem;
-    background: var(--medium-dark);
+    box-shadow: 0.5rem 0.5rem 0 0 var(--medium-dark);
     &__image{
         height: 9rem;
         width:14rem;
         border-radius: 0.5rem 0.5rem 0 0;
+        object-fit: cover;
+        object-position: top;
     }
     &__text{
         font-size:1rem;

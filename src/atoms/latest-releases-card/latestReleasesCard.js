@@ -1,9 +1,9 @@
 import { Card } from 'antd';
-import style from './latestCard.module.scss'
+import style from './latestReleasesCard.module.scss'
 
 const { Meta } = Card;
 
-const LatestCard = (props) =>{
+const LatestReleasesCard = (props) =>{
 return(
     <div className={style['a-latest-card']}>
       <img  className={style['a-latest-card__image']} alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"  />
@@ -15,4 +15,4 @@ return(
 )
 }
 
-export default LatestCard
+export default LatestReleasesCard
