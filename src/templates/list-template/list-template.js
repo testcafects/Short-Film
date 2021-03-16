@@ -4,8 +4,11 @@ import FilterItem from "../../molecules/filter-item/filter-item.js";
 import ListMenuBar from "../../molecules/list-menu-bar/list-menu-bar.js";
 import ListCard from "../../organisms/list-card/list-card.js";
 import ReferalBanner from "../../atoms/referal-banner/referal-banner.js";
+import { useHistory } from "react-router-dom";
 
 const ListTemplate = () => {
+  const history = useHistory();
+
   const List = [
     {
       name: "Price",
@@ -31,6 +34,9 @@ const ListTemplate = () => {
       ],
     },
   ];
+  const navigate = (el) => {
+    history.push(`/detail/${el}`);
+  };
 
   return (
     <div className={style["t-list"]}>
@@ -44,7 +50,7 @@ const ListTemplate = () => {
           </aside>
           <section>
             {[1, 2, 3, 4, 5, 6].map((el) => (
-              <ListCard key={el} />
+              <ListCard key={el} navigate={() => navigate(el)} />
             ))}
           </section>
           <section>

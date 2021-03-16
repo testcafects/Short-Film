@@ -10,9 +10,9 @@ const CommentCard = (props) => {
       <div className={style["m-comment-card__content"]}>
         <Comment {...props} />
         {props.reply.map((data, index) => (
-          <div className={style["m-comment-card__reply"]}>
-            <ProfileIcon key={index} size={40} />
-            <Comment key={index} {...data} />
+          <div key={index} className={style["m-comment-card__reply"]}>
+            <ProfileIcon size={40} />
+            <Comment {...data} />
           </div>
         ))}
       </div>

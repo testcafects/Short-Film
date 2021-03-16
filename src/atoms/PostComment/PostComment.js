@@ -5,7 +5,7 @@ import { Input, Button } from "antd";
 
 const PostComment = (props) => {
   return (
-    <div className={style["a-post-comment"]} data-test="">
+    <div className={style["a-post-comment"]} data-test="post-comment">
       <ProfileIcon size={48} />
       <Input
         className={style["a-post-comment__comment-box"]}

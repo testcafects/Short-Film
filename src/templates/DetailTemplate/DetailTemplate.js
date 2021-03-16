@@ -55,7 +55,7 @@ const DetailTemplate = (props) => {
   };
 
   return (
-    <div className={style["t-detail"]} data-test="">
+    <div className={style["t-detail"]} data-test="detail-template">
       <section className={style["t-detail__story"]}>
         <VideoPlayer />
         <VideoDescription {...detail} />
@@ -64,7 +64,10 @@ const DetailTemplate = (props) => {
         <hr />
         <CommentConatiner comments={detail.comments} />
       </section>
-      <section className={style["t-detail__suggestion_list"]}>
+      <section
+        className={style["t-detail__suggestion_list"]}
+        data-test="suggestion-list"
+      >
         {[1, 2, 3, 4, 1, 2, 3, 4, 4].map((el, index) => (
           <ListCard key={index} />
         ))}
