@@ -1,43 +1,35 @@
-import { Selector } from "testcafe";
+import paymentPage from "./paymentPageModel";
 
-fixture`Getting Started`.page`http://localhost:3000/payment`;
+fixture`Getting Started`.page`http://localhost:3000`;
 
-test("My first test", async (t) => {
-  const cardName = await Selector("input[data-text='card-name']");
-  const cardNumber = await Selector("input[data-text='card-number']");
-  const cardExpMonth = await Selector("input[data-text='card-expiry-month']");
-  const cardExpYear = await Selector("input[data-text='card-expiry-year']");
-  const cardCVV = await Selector("input[data-text='card-cvv']");
-
+test("Valid Card Details", async (t) => {
   const cardNameVal = "username";
-  const cardNumberVal = 9874552455245231;
+  const cardNumberVal = "9874552455245231";
   const cardExpMonthVal = "06";
-  const cardExpYearVal = 2030;
-  const cardCVVVal = 999;
-
-  const completePaymentBtn = await Selector(
-    "button[data-text='completePayment']"
-  );
+  const cardExpYearVal = "2003";
+  const cardCVVVal = "999";
 
   await t
-    .except(cardName.exists)
+    .expect(paymentPage.cardName.exists)
     .ok()
-    .except(cardNumber.exists)
+    .expect(paymentPage.cardNumber.exists)
     .ok()
-    .except(cardExpMonth.exists)
+    .expect(paymentPage.cardExpMonth.exists)
     .ok()
-    .except(cardExpYear.exists)
+    .expect(paymentPage.cardExpYear.exists)
     .ok()
-    .except(cardCVV.exists)
+    .expect(paymentPage.cardCVV.exists)
     .ok()
-    .except(completePaymentBtn.exists)
+    .expect(paymentPage.completePaymentBtn.exists)
     .ok();
 
   await t
-    .typeText(cardName, cardNameVal)
-    .typeText(cardNumber, cardNumberVal)
-    .typeText(cardExpMonth, cardExpMonthVal)
-    .typeText(cardExpYear, cardExpYearVal)
-    .typeText(cardCVV, cardCVVVal)
-    .click(completePaymentBtn);
+    .setTestSpeed(0.1)
+    .typeText(paymentPage.cardName, cardNameVal)
+    .typeText(paymentPage.cardNumber, cardNumberVal);
+  await paymentPage.selectOption(paymentPage.cardExpMonth, cardExpMonthVal);
+  await paymentPage.selectOption(paymentPage.cardExpYear, cardExpYearVal);
+  await t
+    .typeText(paymentPage.cardCVV, cardCVVVal)
+    .click(paymentPage.completePaymentBtn);
 });
