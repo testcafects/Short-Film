@@ -24,7 +24,7 @@ test("Shopping Cart", async (t) => {
   //   "[data-test='Add to Cart']")
 
   await t
-    
+
     .expect(shoppingCart.exists)
     .ok()
     .expect(recommendedCards.exists)
@@ -38,8 +38,8 @@ test("Shopping Cart", async (t) => {
     .expect(rating.exists)
     .ok()
     .expect(ratingCount.exists)
-    .ok()
-    
+    .ok();
+
   // .expect(addToCartButton.exists)
   // .ok();
 

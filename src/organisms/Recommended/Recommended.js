@@ -44,7 +44,7 @@ return (
   data-test="carousel"
 >
   {
-    [1,2,3,4,5,6,7,8,9].map((det)=>{
+    [1,1,1,1,1,1,1,1].map((det)=>{
       return <Cards key={det}/>
     }) 
   }

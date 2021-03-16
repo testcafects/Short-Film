@@ -9,6 +9,7 @@ return (
     <div className={style['m-checkout-box__total']}>Total</div>
     <div className={style['m-checkout-box__price']}>₹2000</div>
     <CouponSearch />
+    {}
     <Buttons id="btn" name="Checkout" width="176px" height="42px"/>
 </div>
 );
