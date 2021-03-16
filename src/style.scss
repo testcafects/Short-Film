@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #3726a6;
+    --primary-contrast: #ffffff;
+    --secondary-color: #4a44f2;
+    --secondary-contrast: #ffffff;
+    --warning: #f20505;
+    --gold: #f2be22;
+    --yellow: #f2e635;
+    --dark: #000;
+    --medium-dark: #f7f7f7;
+
+    --secondary-text-color: #555555;
+    --border-color: #ececec;
+
+    --border-radius: 0.5rem;
+    --inner-scroll: calc(100vh - 4rem);
+}
+
+@mixin scrolling-container {
+    height: var(--inner-scroll);
+    overflow-y: auto;
+}
+
+.ant-btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.ant-btn,
+.ant-input {
+    border-radius: var(--border-radius);
+}
+.ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 3rem;
+}
