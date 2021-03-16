@@ -127,7 +127,7 @@ module.exports = plop => {
                 // Path for the new file
                 path: 'src/templates/{{pascalCase name}}/{{pascalCase name}}.js',
                 // Handlebars template used to generate content of new file
-                templateFile: 'plop-templates/Atomic.js.hbs',                
+                templateFile: 'plop-templates/Atomic.js.hbs',
                 // Add prefix in className
                 data: { prefix: 't' }
             },
@@ -137,7 +137,7 @@ module.exports = plop => {
                 // Path for the new file
                 path: 'src/templates/{{pascalCase name}}/{{pascalCase name}}.module.scss',
                 // Handlebars template used to generate content of new file
-                templateFile: 'plop-templates/Atomic.scss.hbs',                
+                templateFile: 'plop-templates/Atomic.scss.hbs',
                 // Add prefix in className
                 data: { prefix: 't' }
             },

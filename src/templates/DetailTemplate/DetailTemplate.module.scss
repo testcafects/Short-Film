@@ -1,0 +1,17 @@
+.t-detail {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: flex-start;
+    padding: 1rem;
+    &__story {
+        padding: 0 0.5rem 1rem 0.5rem;
+        height: var(--inner-scroll);
+        overflow-y: auto;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+    &__suggestion_list {
+        height: var(--inner-scroll);
+        overflow-y: auto;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+}
