@@ -43,8 +43,8 @@
   },
   "devDependencies": {
     "git-cz": "^4.7.6",
-    "node-sass": "^5.0.0",
     "plop": "^2.7.4",
+    "sass": "^1.32.8",
     "testcafe": "^1.12.0"
   }
 }
