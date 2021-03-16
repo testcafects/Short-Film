@@ -1,20 +1,19 @@
-import style from './App.module.scss';
 import {
   BrowserRouter as Router,
-  Switch,
+  Redirect,
   Route,
-  Redirect
-
+  Switch,
 } from "react-router-dom";
 import Header from "./molecules/header/header.js";
-import ListPage from './pages/list-page/list-page.js';
-import DetailPage from './pages/Detail/Detail.js';
+import DetailPage from "./pages/Detail/Detail.js";
+import ListPage from "./pages/list-page/list-page.js";
+import style from "./App.module.scss";
 
 function App() {
   return (
-    <div className={style['app']}>
-      <Header className={style['app__header']} />
-      <section className={style['app__container']}>
+    <div className={style["app"]}>
+      <Header className={style["app__header"]} />
+      <section className={style["app__container"]}>
         <Router>
           <Switch>
             <Route exact path="/">
@@ -29,7 +28,6 @@ function App() {
           </Switch>
         </Router>
       </section>
-
     </div>
   );
 }
