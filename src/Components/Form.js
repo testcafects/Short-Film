@@ -4,7 +4,6 @@ import { useMutation } from "@apollo/client";
 
 function Form() {
     const [name, setname] = useState("");
-    // const [age, setAge] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 

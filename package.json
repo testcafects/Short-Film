@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.5.0",
+    "@apollo/client": "^3.3.12",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
-    "antd": "^4.14.0",
-    "node-sass": "^5.0.0",
+    "antd": "^4.13.0",
+    "graphql": "^15.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router": "^3.0.0",
+    "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
   },
@@ -43,6 +46,7 @@
   "devDependencies": {
     "git-cz": "^4.7.6",
     "plop": "^2.7.4",
+    "sass": "^1.32.8",
     "testcafe": "^1.12.0"
   }
 }

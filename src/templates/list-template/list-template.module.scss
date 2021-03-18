@@ -1,0 +1,16 @@
+.t-list {
+    height: var(--inner-scroll);
+    overflow-y: auto;
+    &__content {
+        display: grid;
+        grid-template-columns: 19rem calc(100% - 37rem) 18rem;
+        aside {
+            background: var(--medium-dark);
+            padding: 1rem 1.5rem;
+            height: 100%;
+        }
+        section {
+            padding: 0 1.5rem;
+        }
+    }
+}

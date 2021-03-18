@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './LoginPage.module.scss'
-import Loginform from "./../../molecules/Loginform/Loginform.js"
+import Loginform from "./../../molecules/Loginform/Loginform.js";
+import style from './LoginPage.module.scss';
 
 const LoginPage = props => {
     return (

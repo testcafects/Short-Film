@@ -1,13 +1,17 @@
-import React from 'react';
-import style from './Loginform.module.scss'
-import Textbox from "./../../atoms/Textbox/Textbox.js";
+
+import React, { useState } from 'react';
 import SubmitButton from "../../atoms/Button/Button.js";
-import Dividersection from "../../atoms/Dividersection/Dividersection.js"
+import Dividersection from "../../atoms/Dividersection/Dividersection.js";
+import Textbox from "./../../atoms/Textbox/Textbox.js";
+import style from './Loginform.module.scss';
 
 const Loginform = props => {
-return (
-<div className={style['m-loginform']}>
-    <div className="form-group">
+    const [email, setemail] = useState("");
+    const [password, setPassword] = useState("");
+   
+    return (
+        <div className={style['m-loginform']}>
+            <div className="form-group">
                 <Textbox name={"username"} dataTestId={"username"} />
             </div>
             <div className="form-group">
@@ -25,8 +29,8 @@ return (
             <div className="form-group">
                 <SubmitButton name={"logIn"} dataTestId={"logIn"} classProp={"logIn"} />
             </div>
-</div>
-);
+        </div>
+    );
 };
 
 export default Loginform;

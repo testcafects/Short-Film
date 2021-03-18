@@ -1,0 +1,10 @@
+.app {
+    height: 100vh;
+    &__container {
+        // padding-top: 4rem;
+        position: fixed;
+        bottom: 0.5rem;
+        height: var(--inner-scroll);
+        width: 100%;
+    }
+}

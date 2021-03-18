@@ -1,6 +1,6 @@
-import React from 'react';
-import style from './Dividersection.module.scss'
 import { Divider } from 'antd';
+import React from 'react';
+import style from './Dividersection.module.scss';
 
 const Dividersection = props => {
 return (

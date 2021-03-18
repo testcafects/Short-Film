@@ -1,6 +1,6 @@
 import React from 'react';
+import Signupform from "./../../molecules/Signupform/Signupform.js";
 import style from './SignupPage.module.scss';
-import Signupform from "./../../molecules/Signupform/Signupform.js"
 
 const SignupPage = props => {
     return (

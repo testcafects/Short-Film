@@ -1,0 +1,49 @@
+.a-referal-banner {
+    height: 15rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    button {
+        border: 2px dashed var(--primary);
+        border-radius: var(--border-radius);
+        background: rgba(0, 0, 0, 0.452);
+        color: var(--primary-contrast);
+        outline: none;
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    &__banner-content {
+        background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(125, 185, 232, 0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+            bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(125, 185, 232, 0) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(125, 185, 232, 0) 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+        z-index: 1;
+        text-align: center;
+        color: var(--primary-contrast);
+        &--description {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        &--terms {
+            font-size: 0.7rem;
+            padding: 1rem;
+        }
+    }
+}
