@@ -1,11 +1,7 @@
-import ReactStars from "react-rating-stars-component";
+import { Rate } from "antd";
 import style from "./rating.module.scss";
 
 const Rating = () => {
-  const ratingChanged = (newRating) => {
-    console.log(newRating);
-  };
-
   const getRandomArbitrary = () => {
     return Math.floor(Math.random() * (1 + 5) + 1);
   };
@@ -13,13 +9,10 @@ const Rating = () => {
   return (
     <div className={style["a-rating"]}>
       <p>4.2</p>
-      <ReactStars
-        edit={false}
-        count={5}
+      <Rate
+        disabled
+        className={style["a-rating__star"]}
         value={getRandomArbitrary()}
-        onChange={ratingChanged}
-        size={16}
-        activeColor="#f2be22"
       />
       <p>(418)</p>
     </div>
