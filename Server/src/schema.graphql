@@ -1,24 +1,64 @@
 scalar Date
-type Query{
-  coupounById(id: Int!): CoupounCode!
+type Query {
+  coupounById(id: ID!): CoupounCode!
   validate(title: String!): Boolean!
+  user(id: ID!): User
+  cart(id: ID!): Cart
 }
-
-type CoupounCode{
-  id:ID!
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  password: String!
+  token: String
+  Cart: [Cart]
+  Post: [Post]
+}
+type Cart {
+  id: ID
+  userId: ID
+  saveForLater: Boolean
+  status: Boolean
+}
+type Post{
+  id: ID!
+  title: String!
+  price: Int!
+  published: Boolean
+  createdAt: Date
+  authorId: Int
+  rating: Float
+  cartId: Int
+  directorId: Int
+}
+type CoupounCode {
+  id: ID!
   offer: Int!
   title: String!
   validFrom: Date
   validTo: Date
   status: String!
 }
-type Cart{
-  id:ID!
-  movieId: ID!
-  saveForLater: Boolean!
-  status: Boolean!
-  # createdDate:Date
-}
+# type PersonalDetails{
+#     id:ID!
+#     firstName:String!
+#     lastName:String!
+#     email:String!
+#     dob:String!
+#     geners: [Geners!]!
+#     facebook:String!
+#     twitter:String!
+# }
+# type WatchHistory{
+#     id:ID!
+#     title:String!
+#     author:String!
+#     image:String!
+#     rating:Int!
+#     noOfRating:Int!
+#     views:Int!
+#     postCreatedTime:Int!
+# }
 
 
 # type Query{
@@ -29,13 +69,5 @@ type Cart{
 #   createUser(data: createUserInput!): User!
 #   deleteUser(id: ID!):User!
 # }
-# type User{
-#     id: ID!
-#     name: String!
-#     email: String!
-# }
 
-input createUserInput {
-  name: String!
-  email: String!
-}
+

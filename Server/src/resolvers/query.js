@@ -14,6 +14,15 @@ const Query = {
         return coupons;
     },
     
+    cart: async(parent,args,ctx,info)=>{
+        const cart = await prisma.cart.findMany({
+            where: {
+                id: +args.id,
+            },  
+        })
+           return cart;
+    },
+    
     validate: async(parent,args,ctx,info)=>{
 
         var d = parseInt(new Date().getTime())
@@ -36,7 +45,7 @@ const Query = {
                }
            }
            else{
-               console.log(d)
+               
                return false
             }
            
