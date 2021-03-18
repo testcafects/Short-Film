@@ -1,0 +1,26 @@
+{
+  "name": "prismagraphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js -e js,graphql,json --exec babel-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.3.12",
+    "@prisma/client": "^2.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "graphql-tools": "^7.0.4"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.13.10",
+    "nodemon": "^2.0.7",
+    "prisma": "^2.18.0"
+  }
+}

@@ -1,0 +1,41 @@
+scalar Date
+type Query{
+  coupounById(id: Int!): CoupounCode!
+  validate(title: String!): Boolean!
+}
+
+type CoupounCode{
+  id:ID!
+  offer: Int!
+  title: String!
+  validFrom: Date
+  validTo: Date
+  status: String!
+}
+type Cart{
+  id:ID!
+  movieId: ID!
+  saveForLater: Boolean!
+  status: Boolean!
+  # createdDate:Date
+}
+
+
+# type Query{
+#   userById(id: Int!): User!
+#   users: [User!]!
+# }
+# type Mutation {
+#   createUser(data: createUserInput!): User!
+#   deleteUser(id: ID!):User!
+# }
+# type User{
+#     id: ID!
+#     name: String!
+#     email: String!
+# }
+
+input createUserInput {
+  name: String!
+  email: String!
+}
