@@ -1,19 +1,14 @@
 import {
-  ApolloClient, from, HttpLink, InMemoryCache, ApolloProvider
+  ApolloClient, ApolloProvider, from, HttpLink, InMemoryCache
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch
-} from "react-router-dom";
-import style from "./App.module.scss";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import Header from "./molecules/header/header.js";
 import DetailPage from "./pages/Detail/Detail.js";
 import ListPage from "./pages/list-page/list-page.js";
 import LoginPage from "./pages/LoginPage/LoginPage.js";
 import SignupPage from "./pages/SignupPage/SignupPage";
+import style from "./App.module.scss";
 
 
 const errorLink = onError(({ graphqlErrors, networkError }) => {
