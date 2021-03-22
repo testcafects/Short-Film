@@ -10,8 +10,16 @@ const Buttons = (props) => {
         onClick={props.onClick}
         data-test={props.name}
         id={props.id}
+        icon={props.icon}
         type="primary"
-        style={{ width: props.width, height: props.height }}
+        style={{
+          width: props.width,
+          height: props.height,
+          color: props.color,
+          backgroundColor: props.bgcolor,
+          border: props.border
+          
+        }}
       >
         {props.name}
       </Button>

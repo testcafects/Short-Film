@@ -1,16 +1,18 @@
 .m-cart-item{
-&__image{
     display:flex;
+    
+img{
+        width: 8.5rem;
+        height:7rem;
+        border-radius: 0.5rem 0rem 0rem 0.5rem;
+        object-fit: cover;
+        object-position: top;
+     }
+&__action{  
+ display: flex;
+ flex-wrap:wrap;
+ width: 8rem;
+ margin-left: 10rem;
 }
-&__saveforlater{
-    padding-right: 44rem;
-    padding-top: 1rem;
-    flex-direction: row;
-}
-&__remove{
-    justify-content: flex-end;
-    padding-left: 20rem;
-    text-align: flex-end;
-    flex-direction: row;
-}
+
 }

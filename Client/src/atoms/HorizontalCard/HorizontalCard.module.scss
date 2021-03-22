@@ -1,13 +1,8 @@
 .a-horizontal-card{
-display:flex;
-&__image{
-    width: 8.5rem;
-    height:7rem;
-    border-radius: 0.5rem 0rem 0rem 0.5rem;
-}
 &__title{
+    width: 27rem;
     font-size: 1rem;
     font-weight: bold;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
 }
 }

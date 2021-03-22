@@ -7,15 +7,16 @@ import RemoveIcon from "../../atoms/RemoveIcon/RemoveIcon";
 const CartItem = (props) => {
   return (
     <div className={style["m-cart-item"]}>
-      <div className={style["m-cart-item__image"]}>
+      <img
+        className={style["m-cart-item__image"]}
+        src="https://picsum.photos/240"
+        alt="banner"
+      />
+      <HorizontalCard title={props.value.Post.title} />
       
-        <HorizontalCard title={props.value.Post.title} />
-        <div className={style["m-cart-item__remove"]}>
-          <RemoveIcon price={props.value.Post.price} />
-          <div className={style["m-cart-item__saveforlater"]}>
-            <SaveForLater />
-          </div>
-        </div>
+      <div className={style["m-cart-item__action"]}>
+        <RemoveIcon price={props.value.Post.price} />
+        <SaveForLater />
       </div>
     </div>
   );
