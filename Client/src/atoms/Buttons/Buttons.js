@@ -17,8 +17,7 @@ const Buttons = (props) => {
           height: props.height,
           color: props.color,
           backgroundColor: props.bgcolor,
-          border: props.border
-          
+          border: props.border,
         }}
       >
         {props.name}

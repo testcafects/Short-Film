@@ -11,7 +11,7 @@ const CartTemplate = (props) => {
       <Header />
       <div className={style["t-cart-template__container"]}>
         <div className={style["t-cart-template__cart"]}>
-          <ShoppingCart />
+          <ShoppingCart key="shopping-cart" />
         </div>
         <div className={style["t-cart-template__checkoutbox"]}>
           <CheckoutBox />

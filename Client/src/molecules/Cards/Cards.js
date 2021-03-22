@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./Cards.module.scss";
 import { Card } from "antd";
 import "antd/dist/antd.css";

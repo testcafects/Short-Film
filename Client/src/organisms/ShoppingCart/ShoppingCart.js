@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./ShoppingCart.module.scss";
 import CartItem from "../../molecules/CartItem/CartItem";
-import { client } from "../../server/server.js";
 import { gql, useQuery } from "@apollo/client";
 const POST_BY_ID = gql`
   {

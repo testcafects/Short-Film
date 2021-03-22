@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./CartItem.module.scss";
-import HorizontalCard from "../../atoms/HorizontalCard/HorizontalCard";
 import SaveForLater from "../../atoms/SaveForLater/SaveForLater";
 import RemoveIcon from "../../atoms/RemoveIcon/RemoveIcon";
 
@@ -12,8 +11,9 @@ const CartItem = (props) => {
         src="https://picsum.photos/240"
         alt="banner"
       />
-      <HorizontalCard title={props.value.Post.title} />
-      
+      <div className={style["m-cart-item__title"]}>
+        {props.value.Post.title}
+      </div>
       <div className={style["m-cart-item__action"]}>
         <RemoveIcon price={props.value.Post.price} />
         <SaveForLater />

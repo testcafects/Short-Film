@@ -9,7 +9,7 @@ const RemoveIcon = (props) => {
       <span className={style["a-remove-icon__amount"]}>₹{props.price} </span>
       <Buttons
         className={style["a-remove-icon__delete"]}
-        icon={<CloseCircleOutlined style={{ fontSize: '1.5rem' }}/>}
+        icon={<CloseCircleOutlined style={{ fontSize: "1.5rem" }} />}
         color="red"
         bgcolor="white"
         border="none"
