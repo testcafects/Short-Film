@@ -13,7 +13,7 @@ model Cart {
  status Boolean @default(false)
  userId Int?
  User User? @relation(fields: [userId], references: [id])
- Post Post[]
+ Post Post?
 }
  
 model Category {
@@ -59,7 +59,7 @@ model Post {
  description String
  published Boolean @default(false)
  authorId Int
- price BigInt
+ price Float
  rating Float
  cartId Int?
  videoUrl String

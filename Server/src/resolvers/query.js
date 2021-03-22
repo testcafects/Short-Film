@@ -16,12 +16,32 @@ const Query = {
     
     cart: async(parent,args,ctx,info)=>{
         const cart = await prisma.cart.findMany({
-            where: {
-                id: +args.id,
-            },  
-        })
-           return cart;
+         where: {
+             userId: args.userId,
+         }, 
+         include: {
+            Post: true,
+          },  
+        });
+        
+        return cart;
     },
+
+    carts: async(parent,args,ctx,info)=>{
+        const carts = await prisma.cart.findMany({
+        })
+           return carts;
+    },
+    users: async(parent,args,ctx,info)=>{
+        const users = await prisma.user.findMany({
+        })
+           return users;
+    },
+    // posts: async(parent,args,ctx,info)=>{
+    //     const posts = await prisma.post.findMany({
+    //     })
+    //        return posts;
+    // },
     
     validate: async(parent,args,ctx,info)=>{
 

@@ -2,8 +2,10 @@ scalar Date
 type Query {
   coupounById(id: ID!): CoupounCode!
   validate(title: String!): Boolean!
-  user(id: ID!): User
-  cart(id: ID!): Cart
+  user(id: ID!): User!
+  cart(userId: Int!): [Cart!]
+  carts: [Cart!]!
+  users: [User!]!
 }
 type User {
   id: ID!
@@ -12,18 +14,20 @@ type User {
   password: String!
   token: String
   Cart: [Cart]
-  Post: [Post]
+  post: [Post!]
 }
 type Cart {
-  id: ID
+  id: ID!
+  user: User!
   userId: ID
   saveForLater: Boolean
   status: Boolean
+  Post: Post! 
 }
 type Post{
   id: ID!
   title: String!
-  price: Int!
+  price: Float!
   published: Boolean
   createdAt: Date
   authorId: Int

@@ -8,9 +8,10 @@ const CartItem = (props) => {
   return (
     <div className={style["m-cart-item"]}>
       <div className={style["m-cart-item__image"]}>
-        <HorizontalCard title="Complete NodeJS" />
+      
+        <HorizontalCard title={props.value.Post.title} />
         <div className={style["m-cart-item__remove"]}>
-          <RemoveIcon price="1200" />
+          <RemoveIcon price={props.value.Post.price} />
           <div className={style["m-cart-item__saveforlater"]}>
             <SaveForLater />
           </div>
