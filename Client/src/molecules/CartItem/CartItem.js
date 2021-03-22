@@ -15,7 +15,7 @@ const CartItem = (props) => {
         {props.value.Post.title}
       </div>
       <div className={style["m-cart-item__action"]}>
-        <RemoveIcon price={props.value.Post.price} />
+        <RemoveIcon price={props.value.Post.price} id={props.value.id}/>
         <SaveForLater />
       </div>
     </div>

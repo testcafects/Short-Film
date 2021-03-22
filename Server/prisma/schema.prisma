@@ -1,127 +1,130 @@
 generator client {
- provider = "prisma-client-js"
+  provider = "prisma-client-js"
 }
- 
+
 datasource db {
- provider = "postgresql"
- url = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
- 
+
 model Cart {
- id Int @id @default(autoincrement())
- saveForLater Boolean @default(false)
- status Boolean @default(false)
- userId Int?
- User User? @relation(fields: [userId], references: [id])
- Post Post?
+  id           Int     @id @default(autoincrement())
+  saveForLater Boolean @default(false)
+  status       Boolean @default(false)
+  userId       Int?
+  User         User?   @relation(fields: [userId], references: [id])
+  Post         Post?
 }
- 
+
 model Category {
- id Int @id @default(autoincrement())
- name String
- Post Post[]
+  id   Int    @id @default(autoincrement())
+  name String
+  Post Post[]
 }
- 
+
 model Comment {
- id Int @id @default(autoincrement())
- postId Int?
- userId Int
- Post Post? @relation(fields: [postId], references: [id])
+  id     Int   @id @default(autoincrement())
+  postId Int?
+  userId Int
+  Post   Post? @relation(fields: [postId], references: [id])
 }
- 
+
 model CoupenCode {
- id Int @id @default(autoincrement())
- title String @unique
- offer Int
- validFrom DateTime
- validTo DateTime
- status CoupenStatus @default(ACTIVE)
+  id        Int          @id @default(autoincrement())
+  title     String       @unique
+  offer     Int
+  validFrom DateTime
+  validTo   DateTime
+  status    CoupenStatus @default(ACTIVE)
 }
- 
+
 model Director {
- id Int @id @default(autoincrement())
- name String
- avathar String
- Post Post[]
+  id      Int    @id @default(autoincrement())
+  name    String
+  avathar String
+  Post    Post[]
 }
- 
-model Geners {
- id Int @id @default(autoincrement())
- profileId Int?
- generType String
- Profile Profile? @relation(fields: [profileId], references: [id])
+
+model Genres {
+  id        Int      @id @default(autoincrement())
+  profileId Int?
+  genreType String
+  Profile   Profile? @relation(fields: [profileId], references: [id])
+  Post      Post[]
 }
- 
+
 model Post {
- id Int @id @default(autoincrement())
- createdAt DateTime @default(now())
- title String
- description String
- published Boolean @default(false)
- authorId Int
- price Float
- rating Float
- cartId Int?
- videoUrl String
- directorId Int
- User User @relation(fields: [authorId], references: [id])
- Cart Cart? @relation(fields: [cartId], references: [id])
- Director Director @relation(fields: [directorId], references: [id])
- Comment Comment[]
- Category Category[]
+  id          Int        @id @default(autoincrement())
+  createdAt   DateTime   @default(now())
+  title       String
+  description String
+  published   Boolean    @default(false)
+  authorId    Int
+  genreId     Int
+  price       Float
+  rating      Float
+  cartId      Int?
+  videoUrl    String
+  directorId  Int
+  Genres      Genres     @relation(fields: [genreId], references: [id])
+  User        User       @relation(fields: [authorId], references: [id])
+  Cart        Cart?      @relation(fields: [cartId], references: [id])
+  Director    Director   @relation(fields: [directorId], references: [id])
+  Comment     Comment[]
+  Category    Category[]
 }
- 
+
 model Profile {
- id Int @id @default(autoincrement())
- firstName String
- lastName String
- facebook String
- twitter String
- avathar String
- userId Int @unique
- User User @relation(fields: [userId], references: [id])
- Geners Geners[]
+  id        Int      @id @default(autoincrement())
+  firstName String
+  lastName  String
+  facebook  String
+  twitter   String
+  avathar   String
+  userId    Int      @unique
+  User      User     @relation(fields: [userId], references: [id])
+  Genres    Genres[]
 }
- 
+
 model Purchase {
- id Int @id @default(autoincrement())
- status PaymentStatus @default(INPROGRESS)
- postId Int
- paymentMode String
- price BigInt
- userId Int?
- coupenCode String
- User User? @relation(fields: [userId], references: [id])
+  id          Int           @id @default(autoincrement())
+  status      PaymentStatus @default(INPROGRESS)
+  postId      Int
+  paymentMode String
+  price       BigInt
+  userId      Int?
+  coupenCode  String
+  User        User?         @relation(fields: [userId], references: [id])
 }
- 
+
 model User {
- id Int @id @default(autoincrement())
- email String @unique
- name String?
- password String
- token String
- Cart Cart[]
- Post Post[]
- Profile Profile?
- Purchase Purchase[]
- UserWatchHistory UserWatchHistory[]
+  id               Int                @id @default(autoincrement())
+  email            String             @unique
+  name             String?
+  password         String
+  token            String
+  Cart             Cart[]
+  Post             Post[]
+  Profile          Profile?
+  Purchase         Purchase[]
+  UserWatchHistory UserWatchHistory[]
 }
- 
+
 model UserWatchHistory {
- id Int @id @default(autoincrement())
- postId Int
- userId Int?
- User User? @relation(fields: [userId], references: [id])
+  id     Int   @id @default(autoincrement())
+  postId Int
+  userId Int?
+  User   User? @relation(fields: [userId], references: [id])
 }
- 
+
 enum CoupenStatus {
- ACTIVE
- INACTIVE
+  ACTIVE
+  INACTIVE
 }
- 
+
 enum PaymentStatus {
- SUCCESS
- FAILED
- PENDING
- INPROGRESS
+  SUCCESS
+  FAILED
+  PENDING
+  INPROGRESS
 }

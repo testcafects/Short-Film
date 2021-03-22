@@ -6,8 +6,6 @@ const { GraphQLFileLoader } = require("@graphql-tools/graphql-file-loader");
 const { addResolversToSchema } = require("@graphql-tools/schema");
 const Query = require("./resolvers/query");
 const Mutation = require("./resolvers/mutation");
-const Cart = require("./resolvers/cart.js");
-const User = require("./resolvers/user.js");
 const cors =  require("cors");
 
 
@@ -21,7 +19,7 @@ const schemaWithResolvers = addResolversToSchema({
     schema,
     resolvers:{
         Query,
-        // Cart
+        Mutation
        
     },
 })

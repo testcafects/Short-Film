@@ -3,6 +3,20 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from "./Recommended.module.scss";
 import Cards from "../../molecules/Cards/Cards.js";
+import { gql, useQuery } from "@apollo/client";
+
+const POST_BY_GENRE = gql`
+  {
+    postBygenre(id: 1) {
+      title
+      price
+      rating
+      Director{
+        name
+      }
+    }
+  }
+`;
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -21,6 +35,10 @@ const responsive = {
   },
 };
 const Recommended = (props) => {
+  const { loading, error, data } = useQuery(POST_BY_GENRE);
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error </p>;
+
   return (
     <div className={style["o-recommended"]} data-test="recommended_cards">
       <div
@@ -29,7 +47,7 @@ const Recommended = (props) => {
       >
         Recommended For You
       </div>
-
+      
       <Carousel
         swipeable={false}
         draggable={false}
@@ -48,8 +66,8 @@ const Recommended = (props) => {
         itemClass="carousel-item-padding-10-px"
         data-test="carousel"
       >
-        {[1, 1, 1, 1, 1, 1, 1, 1].map((det) => {
-          return <Cards key={det} />;
+        {data.postBygenre.map((det) => {
+          return <Cards key={det} value={det} />;
         })}
       </Carousel>
     </div>

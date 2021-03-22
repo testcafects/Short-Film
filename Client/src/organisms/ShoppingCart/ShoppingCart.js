@@ -5,6 +5,7 @@ import { gql, useQuery } from "@apollo/client";
 const POST_BY_ID = gql`
   {
     cart(userId: 1) {
+      id
       Post {
         title
         price

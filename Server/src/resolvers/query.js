@@ -4,14 +4,17 @@ const prisma = new PrismaClient();
 
 
 const Query = {
-    coupounById: async(parent,args,ctx,info)=>{
-        const coupons = await prisma.coupenCode.findUnique({
+    postBygenre: async(parent,args,ctx,info)=>{
+        const post = await prisma.post.findMany({
          where: {
-             id: +args.id,
-         },   
+             genreId: +args.id,
+         },
+         include: {
+            Director: true,
+          },    
         });
         // console.log(coupons);
-        return coupons;
+        return post;
     },
     
     cart: async(parent,args,ctx,info)=>{

@@ -19,12 +19,14 @@ const Cards = (props) => {
           <img alt="example" src="https://source.unsplash.com/random/150x125" />
         }
       >
+      
         <Meta
-          title="The Complete Node.js Tutorial"
-          description="Director : Nolan"
+          title={props.value.title}
+          description={`Director: ${props.value.Director.name}`}
           data-test="meta_info"
         />
-        <Rating />
+        <Rating value={props.value.rating}/>
+        
         <Buttons
           id="btn"
           name="Add to Cart"

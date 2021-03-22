@@ -37,6 +37,7 @@ const CouponSearch = (props) => {
 
   const validate = (value) => {
     onApply({ variables: { value } });
+    
     if (error) {
       alert(error.networkError);
     }
